@@ -14,7 +14,16 @@ public class BuildScript : SerializedMonoBehaviour
 
     private void Start()
     {
+        buildTimer = 60;
         capacityText.text = maxCapacity.ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            buildTimer = 60;
+        }
     }
 
 

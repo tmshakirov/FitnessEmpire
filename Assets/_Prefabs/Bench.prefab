@@ -103,7 +103,7 @@ MonoBehaviour:
   type: 0
   angle: 1
   currentVisitor: {fileID: 0}
-  texture: {fileID: 2800000, guid: 61af11bbd5dd043b0881beb9788dd9bf, type: 3}
+  texture: {fileID: 2800000, guid: 16a2fbad2c531a94b990d122a0d5f95a, type: 3}
 --- !u!1001 &8014163213029761850
 PrefabInstance:
   m_ObjectHideFlags: 0

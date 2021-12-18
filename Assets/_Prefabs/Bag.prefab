@@ -100,8 +100,9 @@ MonoBehaviour:
   trainingDistance: 2.5
   waitingDistance: 1.25
   type: 2
+  angle: 0
   currentVisitor: {fileID: 0}
-  texture: {fileID: 2800000, guid: c1ac176f637c747088d844ed26cf37d0, type: 3}
+  texture: {fileID: 2800000, guid: d52d9259c4e93ae45862ec5dca954e0e, type: 3}
 --- !u!1001 &8168063349479612507
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -116,4 +116,4 @@ MonoBehaviour:
   type: 1
   angle: 1
   currentVisitor: {fileID: 0}
-  texture: {fileID: 2800000, guid: b8f70b48e8d524153b998aea98458c11, type: 3}
+  texture: {fileID: 2800000, guid: 6e7ff3bc3f3a6654dac403872fce526e, type: 3}
