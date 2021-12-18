@@ -14,7 +14,7 @@ public class BuildScript : SerializedMonoBehaviour
 
     private void Start()
     {
-        buildTimer = 60;
+        buildTimer = 100;
         capacityText.text = maxCapacity.ToString();
     }
 
@@ -22,7 +22,7 @@ public class BuildScript : SerializedMonoBehaviour
     {
         if (other.tag == "Player")
         {
-            buildTimer = 60;
+            buildTimer = 100;
         }
     }
 

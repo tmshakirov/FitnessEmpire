@@ -20,6 +20,11 @@ public class ItemSpawner : MonoBehaviour
         progressCircle.gameObject.SetActive(false);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        itemTimer = 0;
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
@@ -51,7 +56,6 @@ public class ItemSpawner : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        itemTimer = 0;
         progressCircle.gameObject.SetActive(false);
     }
 }

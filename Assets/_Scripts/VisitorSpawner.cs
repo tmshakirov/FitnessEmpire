@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class VisitorSpawner : MonoBehaviour
 {
+    [SerializeField] private int maxVisitors = 5;
     [SerializeField] private float timer;
     [SerializeField] private VisitorScript visitor;
+    [SerializeField] private List<VisitorScript> visitors = new List<VisitorScript>();
 
     private void Update()
     {
         timer -= Time.deltaTime * 60;
-        if (timer <= 0)
+        if (timer <= 0 && visitors.Count < maxVisitors)
         {
-            Instantiate(visitor, transform.position, transform.rotation);
-            timer = Random.Range(300, 500);
+            var v = Instantiate(visitor, transform.position, transform.rotation);
+            v.SetSpawner(this);
+            visitors.Add(v);
+            timer = Random.Range(200, 350);
         }
+    }
+
+    public void Remove (VisitorScript _visitor)
+    {
+        visitors.Remove(_visitor);
     }
 }

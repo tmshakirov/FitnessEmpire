@@ -98,7 +98,7 @@ MonoBehaviour:
   busy: 0
   meshes: []
   trainingDistance: 2.5
-  waitingDistance: 1.25
+  waitingDistance: 1.5
   type: 2
   angle: 0
   currentVisitor: {fileID: 0}
@@ -184,6 +184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hyper_Gym_Training6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd63db3a81ccaba4f8f4112f8ca770fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd63db3a81ccaba4f8f4112f8ca770fa, type: 3}

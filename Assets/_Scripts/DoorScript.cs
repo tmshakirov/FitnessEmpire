@@ -13,6 +13,7 @@ public class DoorScript : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        open = false;
         InvokeRepeating("CheckOpen", 0, 0.5f);
     }
 
@@ -25,11 +26,8 @@ public class DoorScript : MonoBehaviour
         {
             foreach (var v in visitors)
             {
-                if (v.task == TaskType.LEAVING)
-                {
-                    if (Vector3.Distance(transform.position, v.transform.position) <= openingDistance)
-                        open = true;
-                }
+                if (Vector3.Distance(transform.position, v.transform.position) <= openingDistance)
+                    open = true;
             }
         }
         if (open)

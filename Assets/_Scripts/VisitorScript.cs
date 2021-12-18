@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using DG.Tweening;
+using UnityEngine.AI;
 
 public enum TaskType { GOING, WAITING, TRAINING, LEAVING }
 
@@ -15,6 +16,8 @@ public class VisitorScript : SerializedMonoBehaviour
     public float moveSpeed;
     public ToolScript currentTool;
     private float toolFindingTimer;
+    private NavMeshAgent agent;
+    private VisitorSpawner spawner;
 
     [SerializeField] private GameObject money;
 
@@ -29,13 +32,34 @@ public class VisitorScript : SerializedMonoBehaviour
     {
         toolFindingTimer = 30;
         anim = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
         Invoke("Initialization", 0.1f);
+    }
+
+    public void SetSpawner (VisitorSpawner _spawner)
+    {
+        spawner = _spawner;
     }
 
     private void Initialization()
     {
         FindTool();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    private bool DestinationReached()
+    {
+        if (!agent.pathPending)
+        {
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                //if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
 
@@ -47,10 +71,12 @@ public class VisitorScript : SerializedMonoBehaviour
                 if (currentTool != null)
                 {
                     anim.Play("Walk");
-                    transform.LookAt(target);
-                    transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
-                    if (Vector3.Distance(transform.position, target) <= currentTool.waitingDistance)
+                    //transform.LookAt(target);
+                    //transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+                    //if (Vector3.Distance(transform.position, target) <= currentTool.waitingDistance)
+                    if (DestinationReached())
                     {
+                        agent.SetDestination(transform.position);
                         switch (currentTool.type)
                         {
                             case ToolType.BENCH:
@@ -93,10 +119,12 @@ public class VisitorScript : SerializedMonoBehaviour
                 break;
             case TaskType.LEAVING:
                 anim.Play("Walk");
-                transform.LookAt(target);
-                transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
-                if (Vector3.Distance(transform.position, target) <= 0)
+                //transform.LookAt(target);
+                //transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+                //if (Vector3.Distance(transform.position, target) <= 0)
+                if (DestinationReached())
                 {
+                    spawner.Remove(this);
                     Destroy(gameObject);
                 }
                 break;
@@ -120,6 +148,8 @@ public class VisitorScript : SerializedMonoBehaviour
         var exit = GameObject.FindGameObjectWithTag("exit");
         target = new Vector3(exit.transform.position.x, transform.position.y, exit.transform.position.z);
         task = TaskType.LEAVING;
+        agent.stoppingDistance = 0;
+        agent.SetDestination(target);
         if (tools.TryGetValue(currentTool.type, out tool))
         {
             foreach (var t in tool)
@@ -157,6 +187,8 @@ public class VisitorScript : SerializedMonoBehaviour
         {
             currentTool.SetVisitor(this);
             target = new Vector3(currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
+            agent.stoppingDistance = currentTool.waitingDistance;
+            agent.SetDestination(target);
         }
     }
 
