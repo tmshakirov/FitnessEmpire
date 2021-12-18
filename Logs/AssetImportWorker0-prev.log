@@ -1,0 +1,113 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/timur/Documents/GitHub/FitnessEmpire
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59525
+Successfully changed project path to: /Users/timur/Documents/GitHub/FitnessEmpire
+/Users/timur/Documents/GitHub/FitnessEmpire
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 45.93 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/timur/Documents/GitHub/FitnessEmpire/Assets
+GfxDevice: creating device client; threaded=0
+2021-12-17 18:53:51.880 Unity[32032:1165855] Color LCD preferred device: AMD Radeon Pro 5300M (high power)
+2021-12-17 18:53:51.880 Unity[32032:1165855] Metal devices available: 2
+2021-12-17 18:53:51.880 Unity[32032:1165855] 0: AMD Radeon Pro 5300M (high power)
+2021-12-17 18:53:51.880 Unity[32032:1165855] 1: Intel(R) UHD Graphics 630 (low power)
+2021-12-17 18:53:51.881 Unity[32032:1165855] Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000990 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 34.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.983 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008285 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.406 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1493 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.8 MB.
+System memory in use after: 149.9 MB.
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 1973.
+Total: 18.784653 ms (FindLiveObjects: 0.184060 ms CreateObjectMapping: 0.071790 ms MarkObjects: 18.443404 ms  DeleteObjects: 0.084389 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/LilitaOne-Regular SDF.asset
+  artifactKey: Guid(423972b845aa54c4ba7d37e577dada43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LilitaOne-Regular SDF.asset using Guid(423972b845aa54c4ba7d37e577dada43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8147e19ce88eead49e491295deecc9f') in 1.039169 seconds
+  Import took 1.042793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.964695 seconds.
+  path: Assets/Models/boxgloves.fbx
+  artifactKey: Guid(71dc62b7f7a6a4709ae6ed3b61a48278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/boxgloves.fbx using Guid(71dc62b7f7a6a4709ae6ed3b61a48278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9985550973ece7989e654736e1c061') in 0.386264 seconds
+  Import took 0.389585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Models/towel.fbx
+  artifactKey: Guid(99a07449e0c8a45ddbcbb0f8e02d5c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/towel.fbx using Guid(99a07449e0c8a45ddbcbb0f8e02d5c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db4cccdd3fe36755b9fcdcd3fcf17a8') in 0.023314 seconds
+  Import took 0.026745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Models/coach.fbx
+  artifactKey: Guid(eefb1156a42574d388687f6fc352961f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/coach.fbx using Guid(eefb1156a42574d388687f6fc352961f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d7098d4982789d537f62be0c92a3f5') in 0.106245 seconds
+  Import took 0.109212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.808304 seconds.
+  path: Assets/Models/carry_run.anim
+  artifactKey: Guid(a25489ae5450a4587ad94c0cef5bd905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/carry_run.anim using Guid(a25489ae5450a4587ad94c0cef5bd905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d609f0a74c99b8fb358b2dc0860d71c') in 0.174044 seconds
+  Import took 0.177379 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
