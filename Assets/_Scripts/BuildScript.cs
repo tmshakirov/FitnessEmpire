@@ -31,15 +31,18 @@ public class BuildScript : SerializedMonoBehaviour
     {
         if (other.tag == "Player")
         {
-            buildTimer -= Time.deltaTime * 60;
-            if (buildTimer <= 0)
+            if (!other.GetComponent<StickmanController>().IsMoving())
             {
-                if (other.GetComponent<StickmanController>().GetDollars() > 0)
+                buildTimer -= Time.deltaTime * 60;
+                if (buildTimer <= 0)
                 {
-                    other.GetComponent<StickmanController>().AddDollars(-1);
-                    AddMoney(other.transform);
+                    if (other.GetComponent<StickmanController>().GetDollars() > 0)
+                    {
+                        other.GetComponent<StickmanController>().AddDollars(-1);
+                        AddMoney(other.transform);
+                    }
+                    buildTimer = 5;
                 }
-                buildTimer = 5;
             }
         }
     }

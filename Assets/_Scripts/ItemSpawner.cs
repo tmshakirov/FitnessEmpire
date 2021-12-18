@@ -10,11 +10,11 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] private Sprite itemTexture;
     [SerializeField] private Image itemCircle, progressCircle, progressCirclePrefab;
     [SerializeField] private RectTransform canvasRect;
-    private Transform player;
+    private StickmanController player;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<StickmanController>();
         progressCircle = Instantiate(progressCirclePrefab, canvasRect.transform);
         Instantiate(itemCircle, progressCircle.transform).sprite = itemTexture;
         progressCircle.gameObject.SetActive(false);
@@ -23,27 +23,12 @@ public class ItemSpawner : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         itemTimer = 0;
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            itemTimer += Time.deltaTime * 60;
-            progressCircle.gameObject.SetActive(true);
-            progressCircle.fillAmount = itemTimer / maxItemTimer;
-            if (itemTimer >= maxItemTimer)
-            {
-                var i = Instantiate(item, transform.position, Quaternion.identity);
-                other.GetComponent<StickmanController>().AddItem(i);
-                itemTimer = 0;
-            }
-        }
+        progressCircle.gameObject.SetActive(true);
     }
 
     private void Update()
     {
-        if (progressCircle.enabled)
+        if (progressCircle.gameObject.activeSelf)
         {
             float offsetPosY = transform.position.y + 1.5f;
             Vector3 offsetPos = new Vector3(transform.position.x, offsetPosY, transform.position.z);
@@ -51,6 +36,15 @@ public class ItemSpawner : MonoBehaviour
             Vector2 screenPoint = Camera.main.WorldToScreenPoint(offsetPos);
             RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, null, out canvasPos);
             progressCircle.transform.localPosition = new Vector2(canvasPos.x, canvasPos.y + 200);
+
+            itemTimer += Time.deltaTime * 60;
+            progressCircle.fillAmount = itemTimer / maxItemTimer;
+            if (itemTimer >= maxItemTimer)
+            {
+                var i = Instantiate(item, transform.position, Quaternion.identity);
+                player.AddItem(i);
+                itemTimer = 0;
+            }
         }
     }
 

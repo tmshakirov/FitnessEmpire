@@ -22,6 +22,11 @@ public class StickmanController : MonoBehaviour
         RB = GetComponent<Rigidbody>();
     }
 
+    public bool IsMoving()
+    {
+        return joystick.Direction != Vector2.zero;
+    }
+
     void Update()
     {
         if (joystick.Direction != Vector2.zero)

@@ -509,7 +509,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hyper_Gym_Cabinet (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -901815951177491759, guid: 5898d0e3a029d1f41afd8607c29f8d8d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5898d0e3a029d1f41afd8607c29f8d8d, type: 3}
 --- !u!4 &37539812 stripped
 Transform:
@@ -5058,7 +5059,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1445239533589220177, guid: 2512042a4a19dfb41a74880b70b16cd3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2512042a4a19dfb41a74880b70b16cd3, type: 3}
 --- !u!1 &563747761
 GameObject:
@@ -6219,21 +6221,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 0.8051058, z: 2.75}
+  m_Size: {x: 2.5, y: 1.25, z: 2.75}
   m_Center: {x: 0, y: 0.36735958, z: -3.1147816e-16}
---- !u!65 &821123516
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821123512}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6486853, y: 0.8051058, z: 1.6486852}
-  m_Center: {x: 0, y: 0.36735958, z: -0.00000005960464}
 --- !u!1001 &859468864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6823,7 +6812,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1445239533589220177, guid: 2512042a4a19dfb41a74880b70b16cd3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2512042a4a19dfb41a74880b70b16cd3, type: 3}
 --- !u!1001 &966813060
 PrefabInstance:
@@ -11995,21 +11985,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 0.8051058, z: 2.75}
-  m_Center: {x: 0, y: 0.36735958, z: -3.1147816e-16}
---- !u!65 &1651243105
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651243101}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6486853, y: 0.8051058, z: 1.6486852}
-  m_Center: {x: 0, y: 0.36735958, z: -0.00000005960464}
+  m_Size: {x: 2.5, y: 1, z: 2.75}
+  m_Center: {x: 0, y: 1, z: -3.1147816e-16}
 --- !u!1 &1661216630
 GameObject:
   m_ObjectHideFlags: 0
