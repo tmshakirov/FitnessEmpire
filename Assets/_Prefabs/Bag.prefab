@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4468949038810235982}
   - component: {fileID: 1864510246379810948}
   - component: {fileID: 1018244047890410502}
+  - component: {fileID: 8261538121752175816}
   m_Layer: 0
   m_Name: Bag
   m_TagString: Untagged
@@ -103,6 +104,20 @@ MonoBehaviour:
   angle: 0
   currentVisitor: {fileID: 0}
   texture: {fileID: 2800000, guid: d52d9259c4e93ae45862ec5dca954e0e, type: 3}
+--- !u!136 &8261538121752175816
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207427545617191249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 12.333869
+  m_Height: 140.56503
+  m_Direction: 1
+  m_Center: {x: -0.0000004768372, y: -70.17047, z: 0}
 --- !u!1001 &8168063349479612507
 PrefabInstance:
   m_ObjectHideFlags: 0
