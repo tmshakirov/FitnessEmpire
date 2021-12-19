@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6282271043436890375}
   - component: {fileID: 3635568145472382300}
   m_Layer: 0
-  m_Name: BenchTowel
+  m_Name: BenchBarbell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3620572297651811420, guid: cdff01e89e99246ec943a6b1faac29d8, type: 3}
+  - {fileID: 2100000, guid: 97e50cd4a996c9742ac7879d8844a63c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
