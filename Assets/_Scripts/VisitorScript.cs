@@ -9,7 +9,7 @@ public enum TaskType { GOING, WAITING, TRAINING, LEAVING }
 
 public class VisitorScript : SerializedMonoBehaviour
 {
-    private bool gotItem;
+    public bool gotItem;
     public TaskType task;
     public Vector3 target;
     private Animator anim;

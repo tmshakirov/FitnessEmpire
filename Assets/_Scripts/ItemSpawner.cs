@@ -20,6 +20,11 @@ public class ItemSpawner : MonoBehaviour
         progressCircle.gameObject.SetActive(false);
     }
 
+    public ToolType ItemType()
+    {
+        return item.type;
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -50,6 +55,12 @@ public class ItemSpawner : MonoBehaviour
             }
         }
     }
+
+    public ItemScript SpawnItem ()
+    {
+        return Instantiate(item, transform.position, Quaternion.identity);
+    }
+
 
     private void OnTriggerExit(Collider other)
     {
