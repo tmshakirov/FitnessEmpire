@@ -66,8 +66,9 @@ public class BuildScript : SerializedMonoBehaviour
         BuildingTool tool = null;
         if (builds.TryGetValue (type, out tool))
         {
-            Instantiate(tool.tool, new Vector3 (transform.position.x + tool.position.x,
+            var t = Instantiate(tool.tool, new Vector3 (transform.position.x + tool.position.x,
                 tool.position.y, transform.position.z + tool.position.z), Quaternion.Euler(tool.angles));
+            ToolsHandler.Instance.AddTool(t);
             Destroy(gameObject);
         }
     }

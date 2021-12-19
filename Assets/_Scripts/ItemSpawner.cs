@@ -20,6 +20,7 @@ public class ItemSpawner : MonoBehaviour
         progressCircle.gameObject.SetActive(false);
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
         itemTimer = 0;
@@ -28,6 +29,8 @@ public class ItemSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (item.type != ToolType.BARBELL)
+            transform.Rotate(Vector3.up * Time.deltaTime * 30);
         if (progressCircle.gameObject.activeSelf)
         {
             float offsetPosY = transform.position.y + 1.5f;

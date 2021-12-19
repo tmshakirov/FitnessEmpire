@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{25253211-B39E-F1A6-37DC-97E7A0959AE9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/BuildScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/ToolsHandler.cs">
     <Files>
-      <File FileName="Assets/_Scripts/ItemSpawner.cs" Line="31" Column="49" />
-      <File FileName="Assets/_Scripts/StickmanController.cs" Line="27" Column="51" />
+      <File FileName="Assets/_Scripts/ItemSpawner.cs" Line="32" Column="12" />
+      <File FileName="Assets/_Scripts/StickmanController.cs" />
       <File FileName="Assets/_Scripts/VisitorScript.cs" />
       <File FileName="Assets/_Scripts/CameraController.cs" />
-      <File FileName="Assets/_Scripts/ToolScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/ToolsHandler.cs" />
+      <File FileName="Assets/_Scripts/ToolScript.cs" />
+      <File FileName="Assets/_Scripts/ToolsHandler.cs" Line="17" Column="26" />
       <File FileName="Assets/_Scripts/UIHandler.cs" />
-      <File FileName="Assets/_Scripts/VisitorSpawner.cs" Line="19" Column="27" />
+      <File FileName="Assets/_Scripts/VisitorSpawner.cs" />
       <File FileName="Assets/_Scripts/DoorScript.cs" />
       <File FileName="Assets/_Scripts/ItemScript.cs" />
       <File FileName="Assets/_Scripts/MoneyScript.cs" />
-      <File FileName="Assets/_Scripts/BuildScript.cs" Line="34" Column="18" />
+      <File FileName="Assets/_Scripts/BuildScript.cs" Line="71" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +20,7 @@
           <Node name="FitnessEmpire" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="_Scripts" expanded="True">
-                <Node name="BuildScript.cs" selected="True" />
+                <Node name="ToolsHandler.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -30,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="60dae39b-b8cc-44e2-8db0-0a7cab3f0ede" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d8e4fe8-6dcf-4ec2-8506-a5564f098b22" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

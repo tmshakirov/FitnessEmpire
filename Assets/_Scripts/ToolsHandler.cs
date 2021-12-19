@@ -12,6 +12,11 @@ public class ToolsHandler : Singleton<ToolsHandler>
         tools = FindObjectsOfType<ToolScript>().ToList();
     }
 
+    public void AddTool (ToolScript _tool)
+    {
+        tools.Add(_tool);
+    }
+
     public ToolScript GetFreeTool()
     {
         List<ToolScript> freeTools = new List<ToolScript>();
