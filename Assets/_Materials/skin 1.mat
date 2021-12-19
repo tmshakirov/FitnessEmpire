@@ -110,26 +110,26 @@ Material:
     - _Lumin: 0
     - _MaxLight: 1
     - _Metallic: 0
-    - _MinLight: 0.5
+    - _MinLight: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Offset: 0.4
+    - _Offset: 1.1
     - _OtlWidth: 1.25
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Segmented: 1
     - _ShadowSoftness: 1
-    - _ShnIntense: 0
+    - _ShnIntense: 0.553
     - _ShnOverlap: 0
     - _ShnRange: 0.15
-    - _ShnSmooth: 0
+    - _ShnSmooth: 0.751
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Steps: 3
-    - _StpSmooth: 1
+    - _StpSmooth: 0.523
     - _Surface: 0
     - _UVSec: 0
     - _WorkflowMode: 0
@@ -142,6 +142,6 @@ Material:
     - _MainColor: {r: 0.105882354, g: 0.6784314, b: 0.9843137, a: 1}
     - _OtlColor: {r: 0.1882353, g: 0.1882353, b: 0.21568628, a: 1}
     - _ShadowColor: {r: 0.28132787, g: 0.45560196, b: 0.5471698, a: 1}
-    - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
+    - _ShnColor: {r: 1, g: 1, b: 0.81509435, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
