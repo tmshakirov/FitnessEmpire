@@ -56,12 +56,11 @@ public class BuildScript : SerializedMonoBehaviour
             capacityText.text = (maxCapacity-capacity).ToString();
         if (capacity >= maxCapacity)
         {
-            BuildTool();
-            player.position = new Vector3(player.position.x, player.position.y, player.position.z - 1);
+            BuildTool(player);
         }
     }
 
-    public virtual void BuildTool()
+    public virtual void BuildTool(Transform player)
     {
         BuildingTool tool = null;
         if (builds.TryGetValue (type, out tool))
@@ -71,6 +70,7 @@ public class BuildScript : SerializedMonoBehaviour
             ToolsHandler.Instance.AddTool(t);
             Destroy(gameObject);
         }
+        player.position = new Vector3(player.position.x, player.position.y, player.position.z - 1);
     }
 }
 

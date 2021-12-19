@@ -40,7 +40,7 @@ public class ItemSpawner : MonoBehaviour
             RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, null, out canvasPos);
             progressCircle.transform.localPosition = new Vector2(canvasPos.x, canvasPos.y + 200);
 
-            itemTimer += Time.deltaTime * 60;
+            itemTimer += Time.deltaTime * 90;
             progressCircle.fillAmount = itemTimer / maxItemTimer;
             if (itemTimer >= maxItemTimer)
             {
