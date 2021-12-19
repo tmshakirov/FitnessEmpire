@@ -19,7 +19,7 @@ public class MoneyScript : MonoBehaviour
             rotationVector = new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), 0);
         else
             rotationVector = new Vector3(0, Random.Range(0.5f, 1f), 0);
-        rotationSpeed = Random.Range(50, 75);
+        rotationSpeed = Random.Range(60, 80);
     }
 
     // Update is called once per frame

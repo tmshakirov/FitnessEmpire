@@ -1182,3 +1182,45 @@ Total: 19.172791 ms (FindLiveObjects: 0.273893 ms CreateObjectMapping: 0.104505 
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004216 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.371 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.8 MB.
+System memory in use after: 187.9 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 2236.
+Total: 19.634397 ms (FindLiveObjects: 0.222647 ms CreateObjectMapping: 0.063956 ms MarkObjects: 19.317791 ms  DeleteObjects: 0.028491 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2253.460408 seconds.
+  path: Assets/_Prefabs/Extension1.prefab
+  artifactKey: Guid(75cc3bf433c28d0479a796b6d3472a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/Extension1.prefab using Guid(75cc3bf433c28d0479a796b6d3472a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de1017c73682c86946bf9729bc5451e') in 0.416585 seconds
+  Import took 0.419734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.479098 seconds.
+  path: Assets/_Prefabs/Extension1.prefab
+  artifactKey: Guid(75cc3bf433c28d0479a796b6d3472a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/Extension1.prefab using Guid(75cc3bf433c28d0479a796b6d3472a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e1bb56c821999cecc68e1cfe844b84') in 0.039834 seconds
+  Import took 0.042945 seconds .
+
