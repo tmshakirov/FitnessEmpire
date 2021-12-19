@@ -61,7 +61,7 @@ public class BuildScript : SerializedMonoBehaviour
         }
     }
 
-    public void BuildTool()
+    public virtual void BuildTool()
     {
         BuildingTool tool = null;
         if (builds.TryGetValue (type, out tool))

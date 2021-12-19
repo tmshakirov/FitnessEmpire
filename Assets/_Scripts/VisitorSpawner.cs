@@ -17,7 +17,7 @@ public class VisitorSpawner : MonoBehaviour
             var v = Instantiate(visitor, transform.position, transform.rotation);
             v.SetSpawner(this);
             visitors.Add(v);
-            timer = Random.Range(200, 350);
+            timer = Random.Range(150, 300);
         }
     }
 

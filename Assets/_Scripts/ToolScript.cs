@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum ToolType { BENCH, TREADMILL, BAG, BARBELL, SQUAT, BIKE }
-public enum Angle { LOOKAT, FORWARD, BACKWARDS }
 
 public class ToolScript : MonoBehaviour
 {
@@ -12,7 +11,6 @@ public class ToolScript : MonoBehaviour
     public float trainingDistance = 0.75f;
     public float waitingDistance;
     public ToolType type;
-    public Angle angle;
     public VisitorScript currentVisitor;
     public Texture2D texture;
 

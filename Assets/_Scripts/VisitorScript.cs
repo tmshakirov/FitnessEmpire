@@ -82,6 +82,9 @@ public class VisitorScript : SerializedMonoBehaviour
                             case ToolType.BENCH:
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y - 90, currentTool.transform.eulerAngles.z);
                                 break;
+                            case ToolType.BIKE:
+                                transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y, currentTool.transform.eulerAngles.z);
+                                break;
                             case ToolType.TREADMILL:
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y + 90, currentTool.transform.eulerAngles.z);
                                 break;
@@ -199,11 +202,8 @@ public class VisitorScript : SerializedMonoBehaviour
             case ToolType.BENCH:
                 anim.Play("Lying");
                 break;
-            case ToolType.BAG:
-                anim.Play("Idle");
-                break;
-            case ToolType.TREADMILL:
-                anim.Play("Idle");
+            case ToolType.BIKE:
+                anim.Play("CyclingIdle");
                 break;
             default:
                 anim.Play("Idle");
@@ -225,7 +225,7 @@ public class VisitorScript : SerializedMonoBehaviour
                 anim.Play("Run");
                 break;
             case ToolType.BIKE:
-                anim.Play("Bike");
+                anim.Play("Cycling");
                 break;
             case ToolType.SQUAT:
                 anim.Play("Squat");
