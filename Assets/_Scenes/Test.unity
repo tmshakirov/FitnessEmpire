@@ -2049,6 +2049,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25e8ada8e9eb0394a82f7064ced0941d, type: 3}
+--- !u!1 &146484033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 25e8ada8e9eb0394a82f7064ced0941d,
+    type: 3}
+  m_PrefabInstance: {fileID: 146484032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &146484034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146484033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c607caedd5254169b85e0da384b7680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  busy: 0
+  meshes: []
+  trainingDistance: 2.5
+  waitingDistance: 0
+  type: 5
+  angle: 1
+  currentVisitor: {fileID: 0}
+  texture: {fileID: 2800000, guid: 6e7ff3bc3f3a6654dac403872fce526e, type: 3}
 --- !u!1001 &146718960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17028,7 +17054,6 @@ GameObject:
   - component: {fileID: 1637603794136044516}
   - component: {fileID: 2384150692110572609}
   - component: {fileID: 500677075969009803}
-  - component: {fileID: 9002758767710674677}
   - component: {fileID: 1415896374}
   m_Layer: 0
   m_Name: Treadmill
@@ -18167,6 +18192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 8985325466943901573, guid: 6953736a99a1642c28bdfe253164aaf9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
 --- !u!137 &8112670650097168787
@@ -18311,20 +18341,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &9002758767710674677
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2157856809711290718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1582254768715528588, guid: f9d12ddf2ea50c449af72827788cdd07, type: 3}
 --- !u!4 &9009092734405870503
 Transform:
   m_ObjectHideFlags: 0

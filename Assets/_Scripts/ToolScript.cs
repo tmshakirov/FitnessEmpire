@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ToolType { BENCH, TREADMILL, BAG, BARBELL, SQUAT }
+public enum ToolType { BENCH, TREADMILL, BAG, BARBELL, SQUAT, BIKE }
 public enum Angle { LOOKAT, FORWARD, BACKWARDS }
 
 public class ToolScript : MonoBehaviour

@@ -224,6 +224,9 @@ public class VisitorScript : SerializedMonoBehaviour
             case ToolType.TREADMILL:
                 anim.Play("Run");
                 break;
+            case ToolType.BIKE:
+                anim.Play("Bike");
+                break;
             case ToolType.SQUAT:
                 anim.Play("Squat");
                 break;
