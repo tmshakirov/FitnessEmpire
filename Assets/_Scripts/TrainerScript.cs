@@ -70,16 +70,26 @@ public class TrainerScript : MonoBehaviour
                 anim.Play("Idle");
                 break;
             case TrainerType.CARRYING:
-                if (DestinationReached() && !visitor.gotItem)
+                if (visitor != null && visitor.task == TaskType.WAITING)
                 {
-                    anim.Play("Idle");
-                    agent.SetDestination(transform.position);
-                    transform.LookAt(target);
-                    GiveItem();
+                    if (DestinationReached() && !visitor.gotItem)
+                    {
+                        anim.Play("Idle");
+                        agent.SetDestination(transform.position);
+                        transform.LookAt(target);
+                        GiveItem();
+                    }
+                    else
+                    {
+                        anim.Play("Carrying");
+                    }
                 }
                 else
                 {
-                    anim.Play("Carrying");
+                    Destroy(item.gameObject);
+                    visitor = null;
+                    spawner = null;
+                    task = TrainerType.WAITING;
                 }
                 break;
         }
