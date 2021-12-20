@@ -80,12 +80,18 @@ public class VisitorScript : SerializedMonoBehaviour
                         switch (currentTool.type)
                         {
                             case ToolType.BENCH:
+                                agent.enabled = false;
+                                transform.position = new Vector3 (currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y - 90, currentTool.transform.eulerAngles.z);
                                 break;
                             case ToolType.BIKE:
+                                agent.enabled = false;
+                                transform.position = new Vector3(currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y, currentTool.transform.eulerAngles.z);
                                 break;
                             case ToolType.TREADMILL:
+                                agent.enabled = false;
+                                transform.position = new Vector3(currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y + 90, currentTool.transform.eulerAngles.z);
                                 break;
                             default:
@@ -147,6 +153,15 @@ public class VisitorScript : SerializedMonoBehaviour
 
     private void TrainingFinished()
     {
+        if (!agent.enabled)
+        {
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(transform.position, out hit, 1.5f, NavMesh.AllAreas))
+            {
+                transform.position = hit.position;
+            }
+            agent.enabled = true;
+        }
         currentTool.SetFree();
         var exit = GameObject.FindGameObjectWithTag("exit");
         target = new Vector3(exit.transform.position.x, transform.position.y, exit.transform.position.z);

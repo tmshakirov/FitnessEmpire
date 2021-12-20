@@ -68,12 +68,14 @@
     <Compile Include="Assets/_Scripts/ItemSpawner.cs" />
     <Compile Include="Assets/Joystick Pack/Examples/JoystickSetterExample.cs" />
     <Compile Include="Assets/_Scripts/MoneyScript.cs" />
+    <Compile Include="Assets/_Scripts/UpgradeHandler.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets/Demigiant/DOTweenPro/DOTweenAnimation.cs" />
     <Compile Include="Assets/Demigiant/DOTweenPro/DOTweenTk2d.cs" />
     <Compile Include="Assets/_Scripts/ToolsHandler.cs" />
     <Compile Include="Assets/_Scripts/VisitorScript.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
+    <Compile Include="Assets/_Scripts/UpgradeScript.cs" />
     <Compile Include="Assets/_Scripts/DoorScript.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
@@ -84,12 +86,10 @@
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" />
     <Compile Include="Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
+    <Compile Include="Assets/_Scripts/TrainerScript.cs" />
     <Compile Include="Assets/_Scripts/VisitorSpawner.cs" />
     <Compile Include="Assets/_Scripts/CameraController.cs" />
     <Compile Include="Assets/_Scripts/BuildScript.cs" />
-    <Compile Include="Assets/_Scripts/UpgradeScript.cs" />
-    <Compile Include="Assets/_Scripts/UpgradeHandler.cs" />
-    <Compile Include="Assets/_Scripts/TrainerScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
