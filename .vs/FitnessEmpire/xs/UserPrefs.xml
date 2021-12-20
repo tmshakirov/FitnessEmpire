@@ -1,6 +1,7 @@
 ﻿<Properties StartupConfiguration="{25253211-B39E-F1A6-37DC-97E7A0959AE9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/TrainerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/UpgradeScript.cs">
     <Files>
+      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/TrainerScript.cs" Line="31" Column="1" />
       <File FileName="Assets/_Scripts/ToolScript.cs" />
       <File FileName="Assets/_Scripts/ItemSpawner.cs" />
@@ -14,7 +15,6 @@
       <File FileName="Assets/_Scripts/ItemScript.cs" />
       <File FileName="Assets/_Scripts/MoneyScript.cs" />
       <File FileName="Assets/_Scripts/BuildScript.cs" />
-      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="14" Column="47" />
       <File FileName="Assets/_Scripts/UpgradeHandler.cs" />
       <File FileName="Assets/_Scripts/NavmeshBaker.cs" />
     </Files>
@@ -24,7 +24,7 @@
           <Node name="FitnessEmpire" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="_Scripts" expanded="True">
-                <Node name="TrainerScript.cs" selected="True" />
+                <Node name="UpgradeScript.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -34,7 +34,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="82bea233-4085-4478-9ff8-c5da73a8f4a4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b06e1395-fe2e-4b3d-a730-8e6b5dfdaf69" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

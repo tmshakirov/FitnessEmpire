@@ -48,7 +48,7 @@ public class BuildScript : SerializedMonoBehaviour
     }
 
 
-    public void AddMoney(Transform player)
+    public virtual void AddMoney(Transform player)
     {
         if (capacity <= maxCapacity)
             capacity++;

@@ -87,10 +87,10 @@
     <Compile Include="Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
     <Compile Include="Assets/_Scripts/TrainerScript.cs" />
+    <Compile Include="Assets/_Scripts/NavmeshBaker.cs" />
     <Compile Include="Assets/_Scripts/VisitorSpawner.cs" />
     <Compile Include="Assets/_Scripts/CameraController.cs" />
     <Compile Include="Assets/_Scripts/BuildScript.cs" />
-    <Compile Include="Assets/_Scripts/NavmeshBaker.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
