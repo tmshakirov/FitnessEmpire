@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4350422928682770508}
   - component: {fileID: 860210686768639977}
   - component: {fileID: 3176412427659385635}
-  - component: {fileID: 6203171948071742813}
   - component: {fileID: 3091194905518845598}
+  - component: {fileID: 890058571320623277}
   m_Layer: 0
   m_Name: Treadmill
   m_TagString: Untagged
@@ -83,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6203171948071742813
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3968830389910878966}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1582254768715528588, guid: f9d12ddf2ea50c449af72827788cdd07, type: 3}
 --- !u!114 &3091194905518845598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +100,18 @@ MonoBehaviour:
   trainingDistance: 2.5
   waitingDistance: 0
   type: 1
-  angle: 1
   currentVisitor: {fileID: 0}
   texture: {fileID: 2800000, guid: 6e7ff3bc3f3a6654dac403872fce526e, type: 3}
+--- !u!65 &890058571320623277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968830389910878966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9848185, y: 2.2225664, z: 2.055361}
+  m_Center: {x: -0.00000035762784, y: -2.1175824e-22, z: 0.00000005960464}

@@ -26,7 +26,7 @@ public class TrainerScript : MonoBehaviour
         itemTimer = 60;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        InvokeRepeating("FindVisitors", 0.1f, 0.5f);
+        InvokeRepeating("FindVisitors", 0.1f, 0.25f);
     }
 
     private bool DestinationReached()

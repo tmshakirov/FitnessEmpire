@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 462626769073762088}
   - component: {fileID: 2418261276370836450}
   - component: {fileID: 3913336088512956260}
+  - component: {fileID: 5891547965405321536}
   m_Layer: 0
   m_Name: Barbell
   m_TagString: Untagged
@@ -107,6 +108,19 @@ MonoBehaviour:
   type: 3
   currentVisitor: {fileID: 0}
   texture: {fileID: 2800000, guid: 4601362e88d834612bb8e45defb81890, type: 3}
+--- !u!65 &5891547965405321536
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4219766892770179639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1310124, y: 1.381356, z: 1.099022}
+  m_Center: {x: -0.00000002980233, y: 0, z: 0}
 --- !u!1001 &3913336087971183770
 PrefabInstance:
   m_ObjectHideFlags: 0

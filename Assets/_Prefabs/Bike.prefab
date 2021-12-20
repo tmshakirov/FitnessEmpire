@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &382098481128794193
 Transform:
@@ -91,12 +91,13 @@ GameObject:
   m_Component:
   - component: {fileID: 6924209017894640993}
   - component: {fileID: 7466126055336049288}
+  - component: {fileID: 4598075087325291583}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6924209017894640993
 Transform:
@@ -106,8 +107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7736176762167150555}
   m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.7071078}
-  m_LocalPosition: {x: -7.77, y: 0.046285152, z: -3.3}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: -0.037867837, y: 0.49999943, z: -0.00966111}
+  m_LocalScale: {x: 0.3381392, y: 15.031021, z: 0.26507512}
   m_Children:
   - {fileID: 382098481128794193}
   - {fileID: 3673337031718325398}
@@ -133,6 +134,19 @@ MonoBehaviour:
   type: 5
   currentVisitor: {fileID: 0}
   texture: {fileID: 2800000, guid: 65bda94a2ada7a147abd6945a9124025, type: 3}
+--- !u!65 &4598075087325291583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7736176762167150555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.25, y: 2.5, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7949039589934593400
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +163,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3673337031718325398
 Transform:

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8122199712293506457}
   - component: {fileID: 1321563173097548979}
   - component: {fileID: 8539626672994301562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DollarCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 3921736457524315704}
   - component: {fileID: 7673892097827731358}
   - component: {fileID: 2880640312068082584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BuildPlace (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 6865118178143218994}
   - component: {fileID: 3726231955322022534}
   - component: {fileID: 9150670969719336979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DollarCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 6516031133048001733}
   - component: {fileID: 5311989549792615998}
   - component: {fileID: 4835973800727715926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 535962584340438285}
   - component: {fileID: 6664520779926180617}
   - component: {fileID: 5925355614970844086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 3763895165133683175}
   - component: {fileID: 9211923612200343264}
   - component: {fileID: 4540121626715800534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BuildPlace (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5731733418377943850}
   - component: {fileID: 5731733418377943853}
   - component: {fileID: 5731733418377943852}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: DollarCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 5731733419031100572}
   - component: {fileID: 5731733419031100574}
   - component: {fileID: 2032902784}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: BuildPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 5731733420127231032}
   - component: {fileID: 5731733420127231035}
   - component: {fileID: 5731733420127231034}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}

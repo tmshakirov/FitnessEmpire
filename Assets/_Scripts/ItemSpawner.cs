@@ -25,17 +25,11 @@ public class ItemSpawner : MonoBehaviour
         return item.type;
     }
 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        itemTimer = 0;
-        progressCircle.gameObject.SetActive(true);
-    }
-
     private void Update()
     {
         if (item.type != ToolType.BARBELL)
             transform.Rotate(Vector3.up * Time.deltaTime * 30);
+        progressCircle.gameObject.SetActive(Vector3.Distance (transform.position, player.transform.position) <= 2);
         if (progressCircle.gameObject.activeSelf)
         {
             float offsetPosY = transform.position.y + 1.5f;
@@ -59,11 +53,5 @@ public class ItemSpawner : MonoBehaviour
     public ItemScript SpawnItem ()
     {
         return Instantiate(item, transform.position, Quaternion.identity);
-    }
-
-
-    private void OnTriggerExit(Collider other)
-    {
-        progressCircle.gameObject.SetActive(false);
     }
 }

@@ -166,7 +166,7 @@ public class VisitorScript : SerializedMonoBehaviour
         var exit = GameObject.FindGameObjectWithTag("exit");
         target = new Vector3(exit.transform.position.x, transform.position.y, exit.transform.position.z);
         task = TaskType.LEAVING;
-        agent.stoppingDistance = 0;
+        agent.stoppingDistance = 0.1f;
         agent.SetDestination(target);
         if (tools.TryGetValue(currentTool.type, out tool))
         {

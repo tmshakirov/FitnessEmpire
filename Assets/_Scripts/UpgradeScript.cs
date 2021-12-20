@@ -11,5 +11,6 @@ public class UpgradeScript : BuildScript
         Instantiate(upgrade, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
         UpgradeHandler.Instance.NextUpgrade();
+        NavmeshBaker.Instance.UpdateNavmesh();
     }
 }

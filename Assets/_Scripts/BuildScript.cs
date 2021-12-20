@@ -71,6 +71,7 @@ public class BuildScript : SerializedMonoBehaviour
             Destroy(gameObject);
         }
         player.position = new Vector3(player.position.x, player.position.y, player.position.z - 1);
+        NavmeshBaker.Instance.UpdateNavmesh();
     }
 }
 
