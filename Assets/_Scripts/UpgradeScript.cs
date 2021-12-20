@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum UpgradeType { UPGRADE, NEWROOM }
+
 public class UpgradeScript : BuildScript
 {
+    public UpgradeType upgradeType;
     public int minLevel;
     public GameObject upgrade;
     [SerializeField] private Vector3 spawnPos;

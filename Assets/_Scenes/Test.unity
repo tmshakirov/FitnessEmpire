@@ -1227,12 +1227,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82530635}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &88486150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3021128736310442959, guid: 9e46611bb78454d4c906eaa8e2ab8a47,
-    type: 3}
-  m_PrefabInstance: {fileID: 3036927857123658507}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &101784573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 99a07449e0c8a45ddbcbb0f8e02d5c5f,
@@ -4770,8 +4764,9 @@ MonoBehaviour:
   capacity: 0
   maxCapacity: 500
   capacityText: {fileID: 2126584194}
+  upgradeType: 1
   minLevel: 2
-  upgrade: {fileID: 797391080}
+  upgrade: {fileID: 1377864143}
   spawnPos: {x: 17.6, y: 0, z: -13.55}
   lockSprite: {fileID: 586435731}
   buildSprite: {fileID: 1429188285}
@@ -6317,6 +6312,8 @@ MonoBehaviour:
   - {fileID: 894759235631471874}
   - {fileID: 1456968978}
   - {fileID: 921800448}
+  - {fileID: 756802483}
+  - {fileID: 397719439}
 --- !u!1 &544409653
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,7 +7749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756802480}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -5.92, y: 0, z: 0.203}
+  m_LocalPosition: {x: -5.92, y: 0, z: 0.96}
   m_LocalScale: {x: 0.2, y: 0.5405406, z: 0.20000003}
   m_Children:
   - {fileID: 74260745}
@@ -7801,8 +7798,9 @@ MonoBehaviour:
   capacity: 0
   maxCapacity: 500
   capacityText: {fileID: 1667268466}
+  upgradeType: 1
   minLevel: 2
-  upgrade: {fileID: 88486150}
+  upgrade: {fileID: 1894874390}
   spawnPos: {x: -19.4, y: 0, z: -13.55}
   lockSprite: {fileID: 2035736730}
   buildSprite: {fileID: 74260744}
@@ -7868,12 +7866,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756802480}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &797391080 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3978079667246987658, guid: c1b726d8ea7489c4abe0d92014ba981b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2626502497576622677}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &802708046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8631,6 +8623,7 @@ MonoBehaviour:
   capacity: 0
   maxCapacity: 100
   capacityText: {fileID: 292893054}
+  upgradeType: 0
   minLevel: 2
   upgrade: {fileID: 8670115324323964244, guid: 75cc3bf433c28d0479a796b6d3472a54, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
@@ -14034,6 +14027,7 @@ MonoBehaviour:
   capacity: 0
   maxCapacity: 100
   capacityText: {fileID: 1699172249}
+  upgradeType: 0
   minLevel: 1
   upgrade: {fileID: 8670115324323964244, guid: 75cc3bf433c28d0479a796b6d3472a54, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
@@ -21583,6 +21577,7 @@ MonoBehaviour:
   capacity: 0
   maxCapacity: 100
   capacityText: {fileID: 894759234676341324}
+  upgradeType: 0
   minLevel: 0
   upgrade: {fileID: 8670115324323964244, guid: 75cc3bf433c28d0479a796b6d3472a54, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}

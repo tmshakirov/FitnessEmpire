@@ -10,12 +10,19 @@ public class UpgradeHandler : Singleton<UpgradeHandler>
     public void NextUpgrade()
     {
         currentUpgrade++;
+        //если продление комнаты - активировать, если minlevel равен текущему уровню
+        //если апгрейд - если <= текущему уровню
         foreach (var u in upgrades)
         {
-            if (u.gameObject.activeSelf)
-                u.CheckUnlocked();
-            else
-                u.gameObject.SetActive(u.minLevel <= currentUpgrade);
+            switch (u.upgradeType)
+            {
+                case UpgradeType.NEWROOM:
+                    u.CheckUnlocked();
+                    break;
+                case UpgradeType.UPGRADE:
+                    u.gameObject.SetActive(u.minLevel == currentUpgrade);
+                    break;
+            }
         }
     }
 }
