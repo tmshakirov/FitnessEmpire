@@ -6,6 +6,9 @@ using DG.Tweening;
 public class ItemScript : MonoBehaviour
 {
     public ToolType type;
+    public float offset = 0.25f;
+    [SerializeField] private Vector2 offPos;
+    [SerializeField] private Vector3 angle;
     private Vector3 destPos;
     private bool set;
     [SerializeField] private MeshRenderer MR;
@@ -27,13 +30,18 @@ public class ItemScript : MonoBehaviour
         }
     }
 
+    public void SetDestination (float _posY)
+    {
+        destPos = new Vector3(destPos.x, _posY, destPos.z);
+    }
+
     public void SetTarget (Transform _place, int _offsetCount)
     {
         if (MR == null)
             MR = GetComponent<MeshRenderer>();
         transform.SetParent(_place);
-        transform.localRotation = Quaternion.Euler(0, 0, 0);
-        destPos = new Vector3(0, _offsetCount * 0.25f, 0);
+        transform.localRotation = Quaternion.Euler(angle);
+        destPos = new Vector3(offPos.x, _offsetCount * offset, offPos.y);
         var tmp = MR.material.color;
         MR.material.color = Color.white;
         MR.material.DOColor(tmp, 0.4f);

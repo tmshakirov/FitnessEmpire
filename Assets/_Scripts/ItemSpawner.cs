@@ -14,6 +14,8 @@ public class ItemSpawner : MonoBehaviour
 
     private void Start()
     {
+        if (canvasRect == null)
+            canvasRect = FindObjectOfType<Canvas>().GetComponent<RectTransform>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<StickmanController>();
         progressCircle = Instantiate(progressCirclePrefab, canvasRect.transform);
         Instantiate(itemCircle, progressCircle.transform).sprite = itemTexture;

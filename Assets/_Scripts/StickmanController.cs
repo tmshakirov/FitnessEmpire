@@ -69,6 +69,13 @@ public class StickmanController : MonoBehaviour
             items.Remove(item);
             var middlePoint = new Vector3((_tool.currentVisitor.transform.position.x + item.transform.position.x) / 2,
                 item.transform.position.y + 1f, (_tool.currentVisitor.transform.position.z + item.transform.position.z) / 2);
+            foreach (var i in items)
+            {
+                if (i.transform.position.y > item.transform.position.y)
+                {
+                    i.SetDestination(i.transform.position.y - item.offset);
+                }
+            }
             item.transform.DOMove(middlePoint, 0.25f).OnComplete(() =>
             {
                 item.GetComponent<MeshRenderer>().material.DOColor(Color.white, 0.25f);
