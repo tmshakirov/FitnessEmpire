@@ -129,7 +129,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Steps: 3
-    - _StpSmooth: 0.241
+    - _StpSmooth: 1
     - _Surface: 0
     - _UVSec: 0
     - _WorkflowMode: 0

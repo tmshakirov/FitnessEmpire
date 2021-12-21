@@ -20,8 +20,6 @@ ScriptsOnlyBuild:
     - VisitorSpawner
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshSurface
-    NavMeshComponentsEditor.dll:
-    - UnityEditor.AI.NavMeshAssetManager
     Sirenix.OdinInspector.Editor.dll:
     - Sirenix.OdinInspector.Editor.GeneralDrawerConfig
     - Sirenix.OdinInspector.Editor.ImportSettingsConfig
@@ -763,7 +761,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 92162957efb87642e52ab134a6de65c2
+      Hash: 9022ee1e05dc3e4aecfb9918ca02aaff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeHandler
@@ -925,7 +923,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 2820afb986ee3b1d4fa06e3bbb383a0f
+      Hash: a2c2bca8cdd6ba6d4e7b145537bce4ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeScript
@@ -1112,4 +1110,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/_Scenes/Test.unity
-  playerPath: /Users/timur/Documents/GitHub/FitnessEmpire/Fitness Empire No Coach.apk
+  playerPath: /Users/timur/Documents/GitHub/FitnessEmpire/Fitness Empire.apk

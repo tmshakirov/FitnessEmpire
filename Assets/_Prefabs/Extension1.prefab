@@ -823,7 +823,6 @@ GameObject:
   - component: {fileID: 7119531796903931790}
   - component: {fileID: 6516031133048001733}
   - component: {fileID: 5311989549792615998}
-  - component: {fileID: 4835973800727715926}
   m_Layer: 8
   m_Name: Money
   m_TagString: Untagged
@@ -894,20 +893,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4835973800727715926
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6411279945371871181}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7868016040781732568
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +904,6 @@ GameObject:
   - component: {fileID: 8821221973584294843}
   - component: {fileID: 535962584340438285}
   - component: {fileID: 6664520779926180617}
-  - component: {fileID: 5925355614970844086}
   m_Layer: 8
   m_Name: Money
   m_TagString: Untagged
@@ -990,20 +974,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5925355614970844086
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7868016040781732568}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &8670115324323964244
 GameObject:
   m_ObjectHideFlags: 0
