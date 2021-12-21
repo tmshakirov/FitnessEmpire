@@ -120,10 +120,10 @@ Material:
     - _ReceiveShadows: 1
     - _Segmented: 1
     - _ShadowSoftness: 1
-    - _ShnIntense: 0
+    - _ShnIntense: 0.705
     - _ShnOverlap: 0
-    - _ShnRange: 0.15
-    - _ShnSmooth: 0
+    - _ShnRange: 0.154
+    - _ShnSmooth: 0.733
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,12 +136,12 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.105882354, g: 0.6784314, b: 0.9843137, a: 1}
-    - _Color: {r: 0.39999998, g: 0.51785696, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.45417905, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _MainColor: {r: 0.105882354, g: 0.6784314, b: 0.9843137, a: 1}
     - _OtlColor: {r: 0.1882353, g: 0.1882353, b: 0.21568628, a: 1}
     - _ShadowColor: {r: 0.28132787, g: 0.45560196, b: 0.5471698, a: 1}
-    - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
+    - _ShnColor: {r: 0, g: 0.70046186, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
