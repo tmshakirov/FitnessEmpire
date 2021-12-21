@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{25253211-B39E-F1A6-37DC-97E7A0959AE9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/UpgradeScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/UpgradeHandler.cs">
     <Files>
-      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="9" Column="35" />
       <File FileName="Assets/_Scripts/TrainerScript.cs" Line="31" Column="1" />
       <File FileName="Assets/_Scripts/ToolScript.cs" />
       <File FileName="Assets/_Scripts/ItemSpawner.cs" />
       <File FileName="Assets/_Scripts/StickmanController.cs" />
-      <File FileName="Assets/_Scripts/VisitorScript.cs" />
+      <File FileName="Assets/_Scripts/VisitorScript.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/CameraController.cs" />
       <File FileName="Assets/_Scripts/ToolsHandler.cs" />
-      <File FileName="Assets/_Scripts/UIHandler.cs" />
+      <File FileName="Assets/_Scripts/UIHandler.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/VisitorSpawner.cs" />
       <File FileName="Assets/_Scripts/DoorScript.cs" />
       <File FileName="Assets/_Scripts/ItemScript.cs" />
       <File FileName="Assets/_Scripts/MoneyScript.cs" />
-      <File FileName="Assets/_Scripts/BuildScript.cs" />
-      <File FileName="Assets/_Scripts/UpgradeHandler.cs" />
+      <File FileName="Assets/_Scripts/BuildScript.cs" Line="51" Column="19" />
+      <File FileName="Assets/_Scripts/UpgradeHandler.cs" Line="21" Column="27" />
       <File FileName="Assets/_Scripts/NavmeshBaker.cs" />
     </Files>
     <Pads>
@@ -24,7 +24,7 @@
           <Node name="FitnessEmpire" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="_Scripts" expanded="True">
-                <Node name="UpgradeScript.cs" selected="True" />
+                <Node name="UpgradeHandler.cs" selected="True" />
               </Node>
             </Node>
           </Node>
