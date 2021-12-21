@@ -30,9 +30,9 @@ public class ItemScript : MonoBehaviour
         }
     }
 
-    public void SetDestination (float _posY)
+    public void SetDestination (float _offset)
     {
-        destPos = new Vector3(destPos.x, _posY, destPos.z);
+        destPos = new Vector3(destPos.x, destPos.y - _offset, destPos.z);
     }
 
     public void SetTarget (Transform _place, int _offsetCount)

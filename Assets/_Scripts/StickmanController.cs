@@ -73,7 +73,7 @@ public class StickmanController : MonoBehaviour
             {
                 if (i.transform.position.y > item.transform.position.y)
                 {
-                    i.SetDestination(i.transform.position.y - item.offset);
+                    i.SetDestination(item.offset);
                 }
             }
             item.transform.DOMove(middlePoint, 0.25f).OnComplete(() =>
