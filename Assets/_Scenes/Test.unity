@@ -1995,7 +1995,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -2020,7 +2025,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -2029,10 +2130,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -2070,6 +2171,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -2080,7 +2325,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1276854844}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &118535625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3116,7 +3362,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
+    - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
     - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -3141,13 +3392,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 2|BuildingTool, Assembly-CSharp
@@ -3191,6 +3442,246 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 4|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 2
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 4
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -3201,7 +3692,8 @@ MonoBehaviour:
   type: 3
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 838340227}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &165891411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3562,7 +4054,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -3587,7 +4084,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -3596,10 +4189,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -3637,6 +4230,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -3647,7 +4384,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 989879770}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &174313588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4357,7 +5095,7 @@ PrefabInstance:
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 40
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
@@ -5716,7 +6454,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -5741,7 +6484,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -5750,10 +6589,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -5791,6 +6630,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -5801,7 +6784,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 576083799}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &322713935
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5932,7 +6916,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -5957,7 +6946,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -5966,10 +7051,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -6007,6 +7092,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -6017,7 +7246,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1401036984}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &331833845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7986,7 +9216,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
+    - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
     - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -8011,13 +9246,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 2|BuildingTool, Assembly-CSharp
@@ -8061,6 +9296,246 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 4|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 2
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 4
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -8071,7 +9546,8 @@ MonoBehaviour:
   type: 3
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 2034215713}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &455958086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9553,8 +11029,8 @@ MonoBehaviour:
     roomType: 1
     upgrades:
     - {fileID: 533872376}
-    - {fileID: 2096265786}
     - {fileID: 1539796477}
+    - {fileID: 2096265786}
   - currentLevel: 0
     roomType: 2
     upgrades:
@@ -11857,7 +13333,7 @@ PrefabInstance:
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 40
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
@@ -12552,7 +14028,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
+    - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
     - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -12577,13 +14058,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 2|BuildingTool, Assembly-CSharp
@@ -12627,6 +14108,246 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 4|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 2
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 4
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -12637,7 +14358,8 @@ MonoBehaviour:
   type: 3
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1872291236}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &775600302
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13966,7 +15688,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -13991,7 +15718,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -14000,10 +15823,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -14041,6 +15864,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -14051,7 +16018,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1648310426}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &902198852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14439,7 +16407,7 @@ PrefabInstance:
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 40
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
@@ -21406,7 +23374,7 @@ Transform:
   - {fileID: 454648347}
   - {fileID: 683333501}
   m_Father: {fileID: 1894874394}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &1539796477
 MonoBehaviour:
@@ -23335,7 +25303,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
     - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
+    - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -23360,7 +25333,103 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
       Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 0
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.73
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -23369,10 +25438,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 2|BuildingTool, Assembly-CSharp
+      Data: 4|BuildingTool, Assembly-CSharp
     - Name: tool
       Entry: 10
-      Data: 0
+      Data: 2
     - Name: angles
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -23410,6 +25479,150 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -23420,7 +25633,8 @@ MonoBehaviour:
   type: 2
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1358634311}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &1664404458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26546,7 +28760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1894874391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26672,8 +28886,8 @@ Transform:
   - {fileID: 7782300923751173942}
   - {fileID: 533872374}
   - {fileID: 7782300923004139687}
-  - {fileID: 2096265784}
   - {fileID: 1539796475}
+  - {fileID: 2096265784}
   - {fileID: 890665046}
   - {fileID: 230748157}
   - {fileID: 1548488845}
@@ -28742,7 +30956,12 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 3091194905518845598, guid: 248603af23f224adea4d8d4e45401d62, type: 3}
+    - {fileID: 7466126055336049288, guid: cc963915b4e2b42299e86d2aefadee3a, type: 3}
+    - {fileID: 1018244047890410502, guid: a8c1c77d807964cd2b719cfa6dd40203, type: 3}
+    - {fileID: 8985325466943901570, guid: 6953736a99a1642c28bdfe253164aaf9, type: 3}
     - {fileID: 3913336088512956260, guid: 373dc406fc6ee4ccdb765596a93589b0, type: 3}
+    - {fileID: 3061462525373660108, guid: 94f6ddb223cdc4c559ca13540d18d95f, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -28767,13 +30986,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 6
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 2|BuildingTool, Assembly-CSharp
@@ -28817,6 +31036,246 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 3|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 1
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -90
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.07
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 4|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 2
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 4
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 5|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 3
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 6|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 4
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|BuildingTool, Assembly-CSharp
+    - Name: tool
+      Entry: 10
+      Data: 5
+    - Name: angles
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -28827,7 +31286,8 @@ MonoBehaviour:
   type: 3
   capacity: 0
   maxCapacity: 50
-  capacityText: {fileID: 1939615611}
+  capacityText: {fileID: 5731733418377943852, guid: 80b28c8c95da54616995553ff60f051d,
+    type: 3}
 --- !u!23 &2041116010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29730,7 +32190,7 @@ Transform:
   - {fileID: 1633505501}
   - {fileID: 1723004567}
   m_Father: {fileID: 1894874394}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!114 &2096265786
 MonoBehaviour:
@@ -41292,7 +43752,7 @@ PrefabInstance:
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 40
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 5731733419031100574, guid: 80b28c8c95da54616995553ff60f051d,
         type: 3}
