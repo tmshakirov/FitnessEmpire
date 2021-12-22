@@ -17,9 +17,17 @@ public class ToolsHandler : Singleton<ToolsHandler>
         tools = FindObjectsOfType<ToolScript>().ToList();
     }
 
-    public void AddTool (ToolScript _tool)
+    public void InitTool (ToolScript _tool)
     {
+        StartCoroutine(AddTool(_tool));
+    }
+
+    private IEnumerator AddTool (ToolScript _tool)
+    {
+        yield return new WaitForSeconds(0.15f);
         tools.Add(_tool);
+        foreach (var v in FindObjectsOfType<VisitorSpawner>())
+            v.ChangeLimit();
     }
 
     public ToolScript GetFreeTool()

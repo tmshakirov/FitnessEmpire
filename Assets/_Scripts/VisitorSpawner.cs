@@ -17,8 +17,18 @@ public class VisitorSpawner : MonoBehaviour
             var v = Instantiate(visitor, transform.position, transform.rotation);
             v.SetSpawner(this);
             visitors.Add(v);
-            timer = Random.Range(125, 250);
+            timer = Random.Range(150, 250);
         }
+    }
+
+    public void ResetSpawn()
+    {
+        timer = Random.Range(300, 450);
+    }
+
+    public void ChangeLimit()
+    {
+        maxVisitors = ToolsHandler.Instance.tools.Count;
     }
 
     public void Remove (VisitorScript _visitor)

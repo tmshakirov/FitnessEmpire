@@ -9,10 +9,29 @@ public class UIHandler : Singleton<UIHandler>
     public TMP_Text dollarCounter;
     public TMP_Text label;
     [SerializeField] private List<string> buildingTexts;
+    [SerializeField] private CanvasGroup shopCanvas;
+
+    private void Start()
+    {
+        shopCanvas.gameObject.SetActive(false);
+        shopCanvas.transform.localScale = Vector3.zero; 
+    }
 
     public void SetCount (int _amount)
     {
-        dollarCounter.text = _amount + "$";
+        dollarCounter.text = "$" + _amount;
+    }
+
+    public void OpenShop()
+    {
+        shopCanvas.gameObject.SetActive(true);
+        shopCanvas.transform.DOScale(1, 0.25f);
+    }
+
+    public void CloseShop()
+    {
+        shopCanvas.transform.DOScale(0, 0.25f).OnComplete(() =>
+        shopCanvas.gameObject.SetActive(false));
     }
 
     public void ShowBuildingText()

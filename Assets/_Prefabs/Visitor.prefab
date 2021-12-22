@@ -1007,6 +1007,7 @@ GameObject:
   - component: {fileID: 350340900255965599}
   - component: {fileID: 6176190566630573465}
   - component: {fileID: 4682298451761253608}
+  - component: {fileID: 4018040366785603356}
   m_Layer: 0
   m_Name: Visitor
   m_TagString: Untagged
@@ -1207,6 +1208,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  gotItem: 0
   task: 0
   target: {x: 0, y: 0, z: 0}
   moveSpeed: 2.5
@@ -1234,6 +1236,31 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4018040366785603356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446715164996772191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a08cde5f4474b7c81c0ac138edfdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visitor: {fileID: 7158647305955061365}
+  shirtMaterials:
+  - {fileID: 2100000, guid: d39c5da3a6ee0784db7b6d32483b5a6c, type: 2}
+  - {fileID: 2100000, guid: c1cbed23a7661fb4e9af158636263e80, type: 2}
+  - {fileID: 2100000, guid: b955a159d4b07284f8823aaa79d1c8c0, type: 2}
+  - {fileID: 2100000, guid: 3edaa85a10b7f3843a39b75915b9b628, type: 2}
+  - {fileID: 2100000, guid: 53a03a1bd2d84d44dbfb0dab1200b8fe, type: 2}
+  pantsMaterials:
+  - {fileID: 2100000, guid: d39c5da3a6ee0784db7b6d32483b5a6c, type: 2}
+  - {fileID: 2100000, guid: c1cbed23a7661fb4e9af158636263e80, type: 2}
+  - {fileID: 2100000, guid: b955a159d4b07284f8823aaa79d1c8c0, type: 2}
+  - {fileID: 2100000, guid: 3edaa85a10b7f3843a39b75915b9b628, type: 2}
+  - {fileID: 2100000, guid: 53a03a1bd2d84d44dbfb0dab1200b8fe, type: 2}
 --- !u!1 &6539035503174764197
 GameObject:
   m_ObjectHideFlags: 0

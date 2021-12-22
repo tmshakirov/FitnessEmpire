@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class BuildScript : SerializedMonoBehaviour
 {
-    [SerializeField] protected GameObject confetti, light;
+    [SerializeField] protected GameObject confetti, light, money;
     protected float buildTimer;
     protected int buildCount;
     public ToolType type;
@@ -59,7 +59,15 @@ public class BuildScript : SerializedMonoBehaviour
     public virtual void AddMoney(Transform player)
     {
         if (capacity <= maxCapacity)
+        {
             capacity++;
+            var m = Instantiate(money, player.position, Quaternion.identity);
+            m.transform.DOScale(0.3f, 0.15f);
+            m.transform.DOMove(transform.position, 0.15f).OnComplete(() =>
+            {
+                Destroy(m.gameObject);
+            });
+        }
         if (maxCapacity-capacity >= 0)
             capacityText.text = (maxCapacity-capacity).ToString();
         if (capacity >= maxCapacity)
@@ -79,6 +87,11 @@ public class BuildScript : SerializedMonoBehaviour
 
             Instantiate(light, t.transform.position, Quaternion.identity);
             Instantiate(confetti, t.transform.position, Quaternion.identity);
+
+            NavmeshBaker.Instance.UpdateNavmesh();
+            foreach (var v in FindObjectsOfType<VisitorSpawner>())
+                v.ResetSpawn();
+
             var curScale = t.transform.localScale;
             t.transform.DOScale(curScale * 0.8f, 0).OnComplete(() =>
            t.transform.DOScale(curScale * 1.1f, 0.1f).OnComplete(() =>
@@ -88,14 +101,15 @@ public class BuildScript : SerializedMonoBehaviour
 
             t.transform.DOMoveY(finalPosY + 0.6f, 0.1f).OnComplete(() =>
               t.transform.DOMoveY(finalPosY - 0.05f, 0.1f).OnComplete(() =>
-             t.transform.DOMoveY(finalPosY, 0.3f)));
+             t.transform.DOMoveY(finalPosY, 0.3f)).OnComplete(() =>
+            {
+                ToolsHandler.Instance.InitTool(t);
+            }));
 
             UIHandler.Instance.ShowBuildingText();
-            ToolsHandler.Instance.AddTool(t);
             Destroy(gameObject);
         }
         player.position = new Vector3(player.position.x, player.position.y, player.position.z - 1);
-        NavmeshBaker.Instance.UpdateNavmesh();
     }
 }
 

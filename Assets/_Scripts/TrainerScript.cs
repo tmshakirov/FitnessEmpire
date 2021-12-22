@@ -26,7 +26,7 @@ public class TrainerScript : MonoBehaviour
         itemTimer = 60;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        InvokeRepeating("FindVisitors", 0.1f, 0.25f);
+        InvokeRepeating("FindVisitors", 0.1f, 0.1f);
     }
 
     private bool DestinationReached()
@@ -102,7 +102,7 @@ public class TrainerScript : MonoBehaviour
             var visitors = FindObjectsOfType<VisitorScript>().ToList();
             foreach (var v in visitors)
             {
-                if (v.task == TaskType.WAITING)
+                if (v.task == TaskType.WAITING && v.currentTool != null)
                 {
                     if (visitor == null ||
                         Vector3.Distance(transform.position, visitor.transform.position) > Vector3.Distance(transform.position, v.transform.position))

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using System;
 
-public class StickmanController : MonoBehaviour
+public class StickmanController : Singleton<StickmanController>
 {
     [SerializeField] private int dollars;
     private AudioSource thisSource;
@@ -15,8 +15,11 @@ public class StickmanController : MonoBehaviour
     [SerializeField] private Joystick joystick;
     [SerializeField] private float stickmanSpeed;
 
+    private float defaultPosY;
+
     void Start()
     {
+        defaultPosY = transform.position.y;
         thisSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         RB = GetComponent<Rigidbody>();
@@ -53,6 +56,7 @@ public class StickmanController : MonoBehaviour
     {
         RB.velocity = Vector3.zero;
         RB.angularVelocity = Vector3.zero;
+        transform.position = new Vector3(transform.position.x, defaultPosY, transform.position.z);
     }
 
     public void AddItem (ItemScript _item)
@@ -97,6 +101,11 @@ public class StickmanController : MonoBehaviour
     public int GetDollars()
     {
         return dollars;
+    }
+
+    public bool EnoughMoney (int _amount)
+    {
+        return dollars >= _amount;
     }
 
     public void AddDollars (int _amount)

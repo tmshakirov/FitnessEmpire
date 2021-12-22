@@ -76,7 +76,7 @@ public class VisitorScript : SerializedMonoBehaviour
                     //if (Vector3.Distance(transform.position, target) <= currentTool.waitingDistance)
                     if (DestinationReached())
                     {
-                        agent.SetDestination(transform.position);
+                        //agent.SetDestination(transform.position);
                         switch (currentTool.type)
                         {
                             case ToolType.BENCH:
@@ -95,6 +95,7 @@ public class VisitorScript : SerializedMonoBehaviour
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y + 90, currentTool.transform.eulerAngles.z);
                                 break;
                             default:
+                                agent.enabled = false;
                                 transform.LookAt(target);
                                 break;
                         }
@@ -155,10 +156,13 @@ public class VisitorScript : SerializedMonoBehaviour
     {
         if (!agent.enabled)
         {
-            NavMeshHit hit;
-            if (NavMesh.SamplePosition(transform.position, out hit, 2.5f, NavMesh.AllAreas))
+            if (currentTool.type == ToolType.BIKE || currentTool.type == ToolType.TREADMILL || currentTool.type == ToolType.BENCH)
             {
-                transform.position = hit.position;
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(transform.position, out hit, 2.5f, NavMesh.AllAreas))
+                {
+                    transform.position = hit.position;
+                }
             }
             agent.enabled = true;
         }
@@ -203,10 +207,10 @@ public class VisitorScript : SerializedMonoBehaviour
         currentTool = ToolsHandler.Instance.GetFreeTool();
         if (currentTool != null)
         {
-            currentTool.SetVisitor(this);
             target = new Vector3(currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
-            agent.stoppingDistance = currentTool.waitingDistance;
             agent.SetDestination(target);
+            currentTool.SetVisitor(this);
+            agent.stoppingDistance = currentTool.waitingDistance;
         }
     }
 

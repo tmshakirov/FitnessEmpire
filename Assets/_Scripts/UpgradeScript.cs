@@ -26,7 +26,15 @@ public class UpgradeScript : BuildScript
         if (IsUnlocked())
         {
             if (capacity <= maxCapacity)
+            {
                 capacity++;
+                var m = Instantiate(money, player.position, Quaternion.identity);
+                m.transform.DOScale(0.3f, 0.15f);
+                m.transform.DOMove(transform.position, 0.15f).OnComplete(() =>
+                {
+                    Destroy(m.gameObject);
+                });
+            }
             if (maxCapacity - capacity >= 0)
                 capacityText.text = (maxCapacity - capacity).ToString();
             if (capacity >= maxCapacity)

@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{25253211-B39E-F1A6-37DC-97E7A0959AE9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/ParticlesScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/MarketScript.cs">
     <Files>
-      <File FileName="Assets/_Scripts/UpgradeHandler.cs" Line="31" Column="46" />
-      <File FileName="Assets/_Scripts/StickmanController.cs" />
-      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="103" Column="50" />
-      <File FileName="Assets/_Scripts/TrainerScript.cs" />
-      <File FileName="Assets/_Scripts/ToolScript.cs" Line="22" Column="6" />
-      <File FileName="Assets/_Scripts/ItemSpawner.cs" />
-      <File FileName="Assets/_Scripts/VisitorScript.cs" Line="162" Column="14" />
+      <File FileName="Assets/_Scripts/StickmanController.cs" Line="59" Column="99" />
+      <File FileName="Assets/_Scripts/UpgradeHandler.cs" />
+      <File FileName="Assets/_Scripts/UpgradeScript.cs" Line="101" Column="79" />
+      <File FileName="Assets/_Scripts/TrainerScript.cs" Line="124" Column="18" />
+      <File FileName="Assets/_Scripts/ToolScript.cs" />
+      <File FileName="Assets/_Scripts/ItemSpawner.cs" Line="44" Column="46" />
+      <File FileName="Assets/_Scripts/VisitorScript.cs" Line="78" Column="22" />
       <File FileName="Assets/_Scripts/CameraController.cs" />
-      <File FileName="Assets/_Scripts/ToolsHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/UIHandler.cs" />
-      <File FileName="Assets/_Scripts/VisitorSpawner.cs" />
+      <File FileName="Assets/_Scripts/ToolsHandler.cs" Line="24" Column="13" />
+      <File FileName="Assets/_Scripts/UIHandler.cs" Line="15" Column="36" />
+      <File FileName="Assets/_Scripts/VisitorSpawner.cs" Line="20" Column="37" />
       <File FileName="Assets/_Scripts/DoorScript.cs" />
-      <File FileName="Assets/_Scripts/ItemScript.cs" />
+      <File FileName="Assets/_Scripts/ItemScript.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/MoneyScript.cs" />
-      <File FileName="Assets/_Scripts/BuildScript.cs" Line="74" Column="75" />
-      <File FileName="Assets/_Scripts/NavmeshBaker.cs" />
-      <File FileName="Assets/_Scripts/ParticlesScript.cs" Line="15" Column="10" />
+      <File FileName="Assets/_Scripts/BuildScript.cs" Line="95" Column="17" />
+      <File FileName="Assets/_Scripts/NavmeshBaker.cs" Line="23" Column="52" />
+      <File FileName="Assets/_Scripts/ParticlesScript.cs" />
+      <File FileName="Assets/_Scripts/VisitorRandomizer.cs" Line="10" Column="17" />
+      <File FileName="Assets/_Scripts/MarketScript.cs" Line="8" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +27,7 @@
           <Node name="FitnessEmpire" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="_Scripts" expanded="True">
-                <Node name="ParticlesScript.cs" selected="True" />
+                <Node name="MarketScript.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -35,7 +37,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3765f9be-839a-48a4-b97f-c3624adfd311" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b0666d6f-4342-4658-a700-1230b9e265b9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
