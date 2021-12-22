@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Color 7
+  m_Name: Color 16
   m_Shader: {fileID: 4800000, guid: 128c5f1edaefa4c4fb3f9f7a4615edb2, type: 3}
   m_ShaderKeywords: _SEGMENTED_ON _SPECULAR_SETUP
   m_LightmapFlags: 4
@@ -110,20 +110,20 @@ Material:
     - _Lumin: 0
     - _MaxLight: 1
     - _Metallic: 0
-    - _MinLight: 0.5
+    - _MinLight: 0.184
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0.4
-    - _OtlWidth: 0
+    - _OtlWidth: 1.25
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Segmented: 1
     - _ShadowSoftness: 1
-    - _ShnIntense: 0
+    - _ShnIntense: 0.571
     - _ShnOverlap: 0
-    - _ShnRange: 0.15
-    - _ShnSmooth: 0
+    - _ShnRange: 0.131
+    - _ShnSmooth: 0.705
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,12 +136,12 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.105882354, g: 0.6784314, b: 0.9843137, a: 1}
-    - _Color: {r: 0.09841577, g: 0.5377358, b: 0.33157444, a: 1}
+    - _Color: {r: 0.24259518, g: 0.7264151, b: 0.45188, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _MainColor: {r: 0.105882354, g: 0.6784314, b: 0.9843137, a: 1}
     - _OtlColor: {r: 0.1882353, g: 0.1882353, b: 0.21568628, a: 1}
     - _ShadowColor: {r: 0.28132787, g: 0.45560196, b: 0.5471698, a: 1}
-    - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
+    - _ShnColor: {r: 0.73018867, g: 1, b: 0.8058367, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
