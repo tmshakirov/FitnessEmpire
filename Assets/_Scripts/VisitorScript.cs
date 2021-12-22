@@ -156,7 +156,7 @@ public class VisitorScript : SerializedMonoBehaviour
         if (!agent.enabled)
         {
             NavMeshHit hit;
-            if (NavMesh.SamplePosition(transform.position, out hit, 1.5f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(transform.position, out hit, 2.5f, NavMesh.AllAreas))
             {
                 transform.position = hit.position;
             }

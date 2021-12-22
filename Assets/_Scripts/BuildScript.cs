@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Sirenix.OdinInspector;
+using DG.Tweening;
 
 public class BuildScript : SerializedMonoBehaviour
 {
-    private float buildTimer;
+    [SerializeField] protected GameObject confetti;
+    protected float buildTimer;
     public ToolType type;
     public Dictionary<ToolType, BuildingTool> builds;
     public int capacity, maxCapacity;
@@ -27,7 +29,7 @@ public class BuildScript : SerializedMonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider other)
+    public virtual void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -65,8 +67,13 @@ public class BuildScript : SerializedMonoBehaviour
         BuildingTool tool = null;
         if (builds.TryGetValue (type, out tool))
         {
+            var finalPosY = tool.position.y;
             var t = Instantiate(tool.tool, new Vector3 (transform.position.x + tool.position.x,
                 tool.position.y, transform.position.z + tool.position.z), Quaternion.Euler(tool.angles));
+            Instantiate(confetti, t.transform.position, Quaternion.identity);
+            t.transform.DOMoveY(finalPosY + 0.6f, 0.15f).OnComplete(() =>
+              t.transform.DOMoveY(finalPosY - 0.05f, 0.15f).OnComplete(() =>
+             t.transform.DOMoveY(finalPosY, 0.2f)));
             ToolsHandler.Instance.AddTool(t);
             Destroy(gameObject);
         }

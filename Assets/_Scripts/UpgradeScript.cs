@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public enum UpgradeType { UPGRADE, NEWROOM }
 public enum RoomType { DEFAULT, LEFT, RIGHT }
@@ -68,6 +69,26 @@ public class UpgradeScript : BuildScript
         }
     }
 
+    public override void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (!other.GetComponent<StickmanController>().IsMoving() && IsUnlocked())
+            {
+                buildTimer -= Time.deltaTime * 120;
+                if (buildTimer <= 0)
+                {
+                    if (other.GetComponent<StickmanController>().GetDollars() > 0)
+                    {
+                        other.GetComponent<StickmanController>().AddDollars(-1);
+                        AddMoney(other.transform);
+                    }
+                    buildTimer = 5;
+                }
+            }
+        }
+    }
+
     public override void BuildTool(Transform player)
     {
         if (spawnPos == Vector3.zero)
@@ -76,6 +97,14 @@ public class UpgradeScript : BuildScript
             UpgradeHandler.Instance.RemovePreviousBarrier(roomType, minLevel);
             extension = Instantiate(upgrade, spawnPos, Quaternion.identity);
             extension.transform.Find("Barrier").gameObject.SetActive(true);
+            Instantiate(confetti, transform.position, Quaternion.identity);
+            var curScale = extension.transform.localScale;
+            Camera.main.transform.DOShakePosition(0.5f, 0.2f);
+            extension.transform.DOScale (curScale * 0.6f, 0).OnComplete(() =>
+            extension.transform.DOScale(curScale * 1.1f, 0.1f).OnComplete(() =>
+              extension.transform.DOScale(curScale * 0.9f, 0.1f).OnComplete(() =>
+              extension.transform.DOScale (curScale * 1.05f, 0.15f).OnComplete(() =>
+              extension.transform.DOScale(curScale, 0.15f)))));
         }
         else
         {
