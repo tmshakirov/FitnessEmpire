@@ -33,7 +33,7 @@ public class BuildScript : SerializedMonoBehaviour
         {
             if (!other.GetComponent<StickmanController>().IsMoving())
             {
-                buildTimer -= Time.deltaTime * 60;
+                buildTimer -= Time.deltaTime * 120;
                 if (buildTimer <= 0)
                 {
                     if (other.GetComponent<StickmanController>().GetDollars() > 0)

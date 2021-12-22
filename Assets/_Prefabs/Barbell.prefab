@@ -103,7 +103,7 @@ MonoBehaviour:
   meshes:
   - {fileID: 2418261276942972740}
   - {fileID: 2418261276373476299}
-  trainingDistance: 2.5
+  trainingDistance: 3
   waitingDistance: 0.75
   type: 3
   currentVisitor: {fileID: 0}

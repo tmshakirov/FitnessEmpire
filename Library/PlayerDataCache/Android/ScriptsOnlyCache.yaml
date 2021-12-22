@@ -20,6 +20,8 @@ ScriptsOnlyBuild:
     - VisitorSpawner
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshSurface
+    NavMeshComponentsEditor.dll:
+    - UnityEditor.AI.NavMeshAssetManager
     Sirenix.OdinInspector.Editor.dll:
     - Sirenix.OdinInspector.Editor.GeneralDrawerConfig
     - Sirenix.OdinInspector.Editor.ImportSettingsConfig
@@ -109,63 +111,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1578}
     - Class: 114
-      Script: {instanceID: 1860}
+      Script: {instanceID: 1862}
     - Class: 114
-      Script: {instanceID: 2036}
+      Script: {instanceID: 2038}
     - Class: 114
-      Script: {instanceID: 2058}
+      Script: {instanceID: 2060}
     - Class: 114
-      Script: {instanceID: 2150}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2350}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2568}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2728}
+      Script: {instanceID: 2730}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2762}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 2846}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 3176}
+      Script: {instanceID: 3178}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3228}
     - Class: 114
-      Script: {instanceID: 3294}
+      Script: {instanceID: 3296}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3366}
     - Class: 114
-      Script: {instanceID: 3560}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3604}
     - Class: 114
-      Script: {instanceID: 3806}
+      Script: {instanceID: 3808}
     - Class: 114
-      Script: {instanceID: 3816}
+      Script: {instanceID: 3818}
     - Class: 114
-      Script: {instanceID: 4046}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4702}
-    - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4704}
     - Class: 114
       Script: {instanceID: 4720}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 4896}
+    - Class: 114
+      Script: {instanceID: 4950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -539,7 +541,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: a0bf0c111a296ed8e044f6ee086d085c
+      Hash: 989ec2abc98fc78494917f6917ba9c2d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemScript
@@ -761,7 +763,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 9022ee1e05dc3e4aecfb9918ca02aaff
+      Hash: ccfffc8cd5effaafed4d0dced1aaf23e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeHandler
@@ -923,7 +925,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: a2c2bca8cdd6ba6d4e7b145537bce4ee
+      Hash: 44eb1858e7fc0176642c0118d15195d9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeScript
@@ -1110,4 +1112,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/_Scenes/Test.unity
-  playerPath: /Users/timur/Documents/GitHub/FitnessEmpire/Fitness Empire.apk
+  playerPath: /Users/timur/Documents/GitHub/FitnessEmpire/Fitness Empire Cheats.apk

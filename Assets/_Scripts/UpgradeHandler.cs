@@ -4,25 +4,59 @@ using UnityEngine;
 
 public class UpgradeHandler : Singleton<UpgradeHandler>
 {
-    public int currentUpgrade;
-    [SerializeField] private List<UpgradeScript> upgrades;
+    [SerializeField] private List<UpgradeScript> nextRooms;
+    [SerializeField] private List<Upgrade> upgrades;
 
-    public void NextUpgrade()
+    public bool IsLast (UpgradeScript _upgrade)
     {
-        currentUpgrade++;
-        //если продление комнаты - активировать, если minlevel равен текущему уровню
-        //если апгрейд - если <= текущему уровню
+        return upgrades.Find(x => x.roomType == _upgrade.roomType).IsLast(_upgrade);
+    }
+
+    public int GetCurrentLevel (RoomType _roomType)
+    {
+        return upgrades.Find(x => x.roomType == _roomType).currentLevel;
+    }
+
+    public void RemovePreviousBarrier (RoomType _roomType, int _level)
+    {
+        if (_level > 0)
+        {
+            var upgrade = upgrades.Find(x => x.roomType == _roomType);
+            if (_level < upgrade.upgrades.Count)
+                upgrade.upgrades[_level - 1].RemoveBarrier();
+        }
+
+    }
+
+    public void NextUpgrade(RoomType _type, UpgradeType _utype)
+    {
+        if (_utype == UpgradeType.UPGRADE)
+            upgrades.Find(x => x.roomType == _type).CheckUpgrades();
+        foreach (var n in nextRooms)
+        {
+            n.CheckUnlocked();
+        }
+    }
+}
+
+[System.Serializable]
+public class Upgrade
+{
+    public int currentLevel;
+    public RoomType roomType;
+    public List<UpgradeScript> upgrades;
+
+    public bool IsLast (UpgradeScript _upgrade)
+    {
+        return upgrades.IndexOf(_upgrade) == (upgrades.Count - 1);
+    }
+
+    public void CheckUpgrades()
+    {
+        currentLevel++;
         foreach (var u in upgrades)
         {
-            switch (u.upgradeType)
-            {
-                case UpgradeType.NEWROOM:
-                    u.CheckUnlocked();
-                    break;
-                case UpgradeType.UPGRADE:
-                    u.gameObject.SetActive(u.minLevel == currentUpgrade);
-                    break;
-            }
+            u.CheckActivity(currentLevel);
         }
     }
 }

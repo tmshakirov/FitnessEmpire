@@ -96,4 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
+  offset: 0.3
+  offPos: {x: 0, y: 0}
+  angle: {x: 0, y: 0, z: 0}
   MR: {fileID: 8453026113163179054}

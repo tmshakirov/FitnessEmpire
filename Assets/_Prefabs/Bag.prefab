@@ -98,10 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   busy: 0
   meshes: []
-  trainingDistance: 2.5
+  trainingDistance: 3
   waitingDistance: 1.5
   type: 2
-  angle: 0
   currentVisitor: {fileID: 0}
   texture: {fileID: 2800000, guid: d52d9259c4e93ae45862ec5dca954e0e, type: 3}
 --- !u!136 &8261538121752175816

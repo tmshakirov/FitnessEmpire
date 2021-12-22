@@ -102,6 +102,5 @@ MonoBehaviour:
   trainingDistance: 2.5
   waitingDistance: 0
   type: 4
-  angle: 0
   currentVisitor: {fileID: 0}
-  texture: {fileID: 2800000, guid: 16a2fbad2c531a94b990d122a0d5f95a, type: 3}
+  texture: {fileID: 2800000, guid: c9a111da84e60cd48b369d4edd426d4f, type: 3}

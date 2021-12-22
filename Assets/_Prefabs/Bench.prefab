@@ -99,7 +99,7 @@ MonoBehaviour:
   busy: 0
   meshes:
   - {fileID: 5946419091997181052}
-  trainingDistance: 2.5
+  trainingDistance: 3
   waitingDistance: 0
   type: 0
   currentVisitor: {fileID: 0}
