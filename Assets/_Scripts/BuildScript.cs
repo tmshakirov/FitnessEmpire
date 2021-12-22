@@ -7,8 +7,9 @@ using DG.Tweening;
 
 public class BuildScript : SerializedMonoBehaviour
 {
-    [SerializeField] protected GameObject confetti;
+    [SerializeField] protected GameObject confetti, light;
     protected float buildTimer;
+    protected int buildCount;
     public ToolType type;
     public Dictionary<ToolType, BuildingTool> builds;
     public int capacity, maxCapacity;
@@ -25,6 +26,7 @@ public class BuildScript : SerializedMonoBehaviour
         if (other.tag == "Player")
         {
             buildTimer = 100;
+            buildCount = 0;
         }
     }
 
@@ -43,7 +45,11 @@ public class BuildScript : SerializedMonoBehaviour
                         other.GetComponent<StickmanController>().AddDollars(-1);
                         AddMoney(other.transform);
                     }
-                    buildTimer = 5;
+                    if (buildCount < 100)
+                        buildTimer = 8 - buildCount * 0.07f;
+                    else
+                        buildTimer = 1;
+                    buildCount++;
                 }
             }
         }
@@ -70,10 +76,21 @@ public class BuildScript : SerializedMonoBehaviour
             var finalPosY = tool.position.y;
             var t = Instantiate(tool.tool, new Vector3 (transform.position.x + tool.position.x,
                 tool.position.y, transform.position.z + tool.position.z), Quaternion.Euler(tool.angles));
+
+            Instantiate(light, t.transform.position, Quaternion.identity);
             Instantiate(confetti, t.transform.position, Quaternion.identity);
-            t.transform.DOMoveY(finalPosY + 0.6f, 0.15f).OnComplete(() =>
-              t.transform.DOMoveY(finalPosY - 0.05f, 0.15f).OnComplete(() =>
-             t.transform.DOMoveY(finalPosY, 0.2f)));
+            var curScale = t.transform.localScale;
+            t.transform.DOScale(curScale * 0.8f, 0).OnComplete(() =>
+           t.transform.DOScale(curScale * 1.1f, 0.1f).OnComplete(() =>
+             t.transform.DOScale(curScale * 0.9f, 0.1f).OnComplete(() =>
+             t.transform.DOScale(curScale * 1.05f, 0.15f).OnComplete(() =>
+            t.transform.DOScale(curScale, 0.15f)))));
+
+            t.transform.DOMoveY(finalPosY + 0.6f, 0.1f).OnComplete(() =>
+              t.transform.DOMoveY(finalPosY - 0.05f, 0.1f).OnComplete(() =>
+             t.transform.DOMoveY(finalPosY, 0.3f)));
+
+            UIHandler.Instance.ShowBuildingText();
             ToolsHandler.Instance.AddTool(t);
             Destroy(gameObject);
         }

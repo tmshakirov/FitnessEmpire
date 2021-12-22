@@ -83,7 +83,11 @@ public class UpgradeScript : BuildScript
                         other.GetComponent<StickmanController>().AddDollars(-1);
                         AddMoney(other.transform);
                     }
-                    buildTimer = 5;
+                    if (buildCount < 100)
+                        buildTimer = 8 - buildCount * 0.07f;
+                    else
+                        buildTimer = 1;
+                    buildCount++;
                 }
             }
         }
@@ -97,20 +101,22 @@ public class UpgradeScript : BuildScript
             UpgradeHandler.Instance.RemovePreviousBarrier(roomType, minLevel);
             extension = Instantiate(upgrade, spawnPos, Quaternion.identity);
             extension.transform.Find("Barrier").gameObject.SetActive(true);
-            Instantiate(confetti, transform.position, Quaternion.identity);
-            var curScale = extension.transform.localScale;
-            Camera.main.transform.DOShakePosition(0.5f, 0.2f);
-            extension.transform.DOScale (curScale * 0.6f, 0).OnComplete(() =>
-            extension.transform.DOScale(curScale * 1.1f, 0.1f).OnComplete(() =>
-              extension.transform.DOScale(curScale * 0.9f, 0.1f).OnComplete(() =>
-              extension.transform.DOScale (curScale * 1.05f, 0.15f).OnComplete(() =>
-              extension.transform.DOScale(curScale, 0.15f)))));
+            UIHandler.Instance.ShowUpgradeText();
         }
         else
         {
             upgrade.SetActive(true);
+            extension = upgrade;
             ToolsHandler.Instance.ResetTools();
         }
+        Instantiate(confetti, transform.position, Quaternion.identity);
+        var curScale = extension.transform.localScale;
+        Camera.main.transform.DOShakePosition(0.5f, 0.2f);
+        extension.transform.DOScale(curScale * 0.6f, 0).OnComplete(() =>
+       extension.transform.DOScale(curScale * 1.1f, 0.1f).OnComplete(() =>
+         extension.transform.DOScale(curScale * 0.9f, 0.1f).OnComplete(() =>
+         extension.transform.DOScale(curScale * 1.05f, 0.15f).OnComplete(() =>
+        extension.transform.DOScale(curScale, 0.15f)))));
         gameObject.SetActive(false);
         UpgradeHandler.Instance.NextUpgrade(roomType, upgradeType);
         NavmeshBaker.Instance.UpdateNavmesh();

@@ -91,6 +91,20 @@
     <Compile Include="Assets/_Scripts/VisitorSpawner.cs" />
     <Compile Include="Assets/_Scripts/CameraController.cs" />
     <Compile Include="Assets/_Scripts/BuildScript.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Scripts/PolygonBeamStatic.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonEffectCycler.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonLoopScript.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonButtonScript.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonSceneSelect.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Scripts/PolygonLightFade.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonFireProjectile.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Scripts/PolygonSoundSpawn.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonOrbit.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Scripts/PolygonRotation.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonBeamScript.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Scripts/PolygonLightFlicker.cs" />
+    <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonProjectileScript.cs" />
+    <Compile Include="Assets/_Scripts/ParticlesScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -104,12 +118,16 @@
      <None Include="Assets/Demigiant/readme_DOTweenPro.txt" />
      <None Include="Assets/Demigiant/DOTween/DOTween.XML" />
      <None Include="Assets/Demigiant/DemiLib/Core/DemiLib.dll" />
+     <None Include="Assets/Polygon Arsenal/Shaders/Standard/PolyIntense.Shader" />
+     <None Include="Assets/Polygon Arsenal/Shaders/Standard/PolyRimLightSelective.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/Polygon Arsenal/Shaders/Standard/PolyRimLightSolid.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/Simple Toon/Shaders/STTransparent.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <None Include="Assets/Polygon Arsenal/Polygon Arsenal 2.0 - Documentation.txt" />
      <None Include="Assets/Demigiant/DOTween/DOTween.dll" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
@@ -120,7 +138,9 @@
      <None Include="Assets/Demigiant/DOTweenPro/readme.txt" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/Demigiant/DemiLib/Core/DemiLib.xml" />
+     <None Include="Assets/Polygon Arsenal/Shaders/Standard/PolyRimLightTransparent.shader" />
      <None Include="Assets/Demigiant/DOTweenPro/DOTweenPro.XML" />
+     <None Include="Assets/Polygon Arsenal/Shaders/Standard/PolyLitSurface.shader" />
      <None Include="Assets/Simple Toon/Shaders/STDefault.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Demigiant/DOTween/readme.txt" />

@@ -838,6 +838,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   confetti: {fileID: 236640978016600085, guid: 8052f11596f6f4918a0d45c4c5dc5dbf, type: 3}
+  light: {fileID: 1780108520312974, guid: ca97d3903f5a95e4f9176b90a8021415, type: 3}
   type: 1
   capacity: 0
   maxCapacity: 50
@@ -1002,7 +1003,7 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 90
     - Name: 
       Entry: 4
       Data: 0
@@ -1037,6 +1038,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   confetti: {fileID: 236640978016600085, guid: 8052f11596f6f4918a0d45c4c5dc5dbf, type: 3}
+  light: {fileID: 1780108520312974, guid: ca97d3903f5a95e4f9176b90a8021415, type: 3}
   type: 1
   capacity: 0
   maxCapacity: 50
@@ -2024,6 +2026,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   confetti: {fileID: 236640978016600085, guid: 8052f11596f6f4918a0d45c4c5dc5dbf, type: 3}
+  light: {fileID: 1780108520312974, guid: ca97d3903f5a95e4f9176b90a8021415, type: 3}
   type: 5
   capacity: 0
   maxCapacity: 50
@@ -2442,6 +2445,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   confetti: {fileID: 236640978016600085, guid: 8052f11596f6f4918a0d45c4c5dc5dbf, type: 3}
+  light: {fileID: 1780108520312974, guid: ca97d3903f5a95e4f9176b90a8021415, type: 3}
   type: 5
   capacity: 0
   maxCapacity: 50
@@ -3163,6 +3167,7 @@ MonoBehaviour:
       Entry: 8
       Data: 
   confetti: {fileID: 236640978016600085, guid: 8052f11596f6f4918a0d45c4c5dc5dbf, type: 3}
+  light: {fileID: 1780108520312974, guid: ca97d3903f5a95e4f9176b90a8021415, type: 3}
   type: 5
   capacity: 0
   maxCapacity: 50
