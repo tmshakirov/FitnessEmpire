@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   busy: 0
   meshes: []
-  trainingDistance: 3
+  trainingDistance: 2.5
   waitingDistance: 2
   type: 2
   currentVisitor: {fileID: 0}

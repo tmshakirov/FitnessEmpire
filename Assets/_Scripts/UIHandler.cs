@@ -25,6 +25,11 @@ public class UIHandler : Singleton<UIHandler>
         ShowText("New Part Unlocked!");
     }
 
+    public void ShowRoomText()
+    {
+        ShowText("New Room Unlocked!");
+    }
+
     public void ShowText (string _text)
     {
         label.DOFade(1, 0.75f);

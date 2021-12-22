@@ -108,6 +108,7 @@ public class UpgradeScript : BuildScript
             upgrade.SetActive(true);
             extension = upgrade;
             ToolsHandler.Instance.ResetTools();
+            UIHandler.Instance.ShowRoomText();
         }
         Instantiate(confetti, transform.position, Quaternion.identity);
         var curScale = extension.transform.localScale;
