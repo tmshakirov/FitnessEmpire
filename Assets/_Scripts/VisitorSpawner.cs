@@ -15,7 +15,7 @@ public class VisitorSpawner : MonoBehaviour
         if (timer <= 0 && visitors.Count < maxVisitors)
         {
             VisitorScript v = null;
-            if (Random.Range (1,101) <= 10)
+            if (Random.Range (1,101) <= 7)
                 v = Instantiate(vip, transform.position, transform.rotation);
             else
                 v = Instantiate((Random.Range(1, 101) <= 50) ? visitor : femaleVisitor, transform.position, transform.rotation);

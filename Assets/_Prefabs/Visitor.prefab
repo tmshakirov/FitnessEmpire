@@ -1208,12 +1208,15 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  vip: 0
   gotItem: 0
   task: 0
   target: {x: 0, y: 0, z: 0}
   moveSpeed: 2.5
   currentTool: {fileID: 0}
   money: {fileID: 8124487843101519101, guid: 8af751da0a210482fbc15adc76670821, type: 3}
+  vipTexture: {fileID: 0}
+  trainer: {fileID: 0}
 --- !u!195 &4682298451761253608
 NavMeshAgent:
   m_ObjectHideFlags: 0
