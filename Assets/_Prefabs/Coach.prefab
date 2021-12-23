@@ -704,7 +704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   task: 0
   target: {x: 0, y: 0, z: 0}
-  moveSpeed: 0
+  moveSpeed: 3.5
   itemPlace: {fileID: 4601543760915074029}
   visitor: {fileID: 0}
   item: {fileID: 0}

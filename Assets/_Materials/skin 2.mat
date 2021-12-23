@@ -110,7 +110,7 @@ Material:
     - _Lumin: 0
     - _MaxLight: 1
     - _Metallic: 0
-    - _MinLight: 0
+    - _MinLight: 0.08
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 1.1
@@ -120,7 +120,7 @@ Material:
     - _ReceiveShadows: 1
     - _Segmented: 1
     - _ShadowSoftness: 1
-    - _ShnIntense: 0.567
+    - _ShnIntense: 0.25
     - _ShnOverlap: 0
     - _ShnRange: 0.134
     - _ShnSmooth: 0.751
@@ -128,7 +128,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 3
+    - _Steps: 15
     - _StpSmooth: 0.523
     - _Surface: 0
     - _UVSec: 0

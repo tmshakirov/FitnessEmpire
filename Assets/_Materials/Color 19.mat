@@ -107,7 +107,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Lumin: 0
+    - _Lumin: 0.6
     - _MaxLight: 1
     - _Metallic: 0
     - _MinLight: 0.5
@@ -120,7 +120,7 @@ Material:
     - _ReceiveShadows: 1
     - _Segmented: 1
     - _ShadowSoftness: 1
-    - _ShnIntense: 0.629
+    - _ShnIntense: 0
     - _ShnOverlap: 0
     - _ShnRange: 0.314
     - _ShnSmooth: 0.285

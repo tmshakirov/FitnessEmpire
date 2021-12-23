@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - DynamicJoystick
     - ItemScript
     - ItemSpawner
+    - MarketScript
     - MoneyScript
     - NavmeshBaker
     - ParticlesScript
@@ -17,6 +18,7 @@ ScriptsOnlyBuild:
     - UIHandler
     - UpgradeHandler
     - UpgradeScript
+    - VisitorRandomizer
     - VisitorScript
     - VisitorSpawner
     NavMeshComponents.dll:
@@ -41,9 +43,6 @@ ScriptsOnlyBuild:
     Unity.Recorder.Editor.dll:
     - UnityEditor.Recorder.MovieRecorderEditor
     - UnityEditor.Recorder.MovieRecorderSettings
-    - UnityEditor.Recorder.RecorderControllerSettings
-    - UnityEditor.Recorder.RecorderSettingsPrefsEditor
-    - UnityEditor.Recorder.RecorderWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -56,8 +55,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -66,9 +67,14 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
   sceneClasses:
     Assets/_Scenes/Test.unity:
     - Class: 1
@@ -116,67 +122,81 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1578}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1860}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 2036}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 2058}
+      Script: {instanceID: 1976}
     - Class: 114
-      Script: {instanceID: 2150}
+      Script: {instanceID: 2054}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2076}
     - Class: 114
-      Script: {instanceID: 2566}
+      Script: {instanceID: 2168}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2364}
     - Class: 114
-      Script: {instanceID: 2728}
+      Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 3176}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3226}
+      Script: {instanceID: 3166}
     - Class: 114
-      Script: {instanceID: 3294}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3560}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3602}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3806}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3816}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 4046}
+      Script: {instanceID: 3626}
     - Class: 114
-      Script: {instanceID: 4134}
+      Script: {instanceID: 3832}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 3964}
     - Class: 114
-      Script: {instanceID: 4702}
+      Script: {instanceID: 4072}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4122}
     - Class: 114
-      Script: {instanceID: 4720}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4214}
     - Class: 114
-      Script: {instanceID: 4948}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 127460}
+      Script: {instanceID: 4488}
+    - Class: 114
+      Script: {instanceID: 4600}
+    - Class: 114
+      Script: {instanceID: 4740}
+    - Class: 114
+      Script: {instanceID: 4756}
+    - Class: 114
+      Script: {instanceID: 4758}
+    - Class: 114
+      Script: {instanceID: 4898}
+    - Class: 114
+      Script: {instanceID: 4936}
+    - Class: 114
+      Script: {instanceID: 4990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -205,6 +225,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     - Class: 238
       Script: {instanceID: 0}
     - Class: 850595691
@@ -212,10 +234,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 824e8d4cb47ffd88ddf959dbd4526585
@@ -240,6 +274,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: ArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 09b31d50a8885ff0947d3bfb1e20c078
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonEffectCycler
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -324,6 +364,12 @@ ScriptsOnlyBuild:
     assemblyName: NavMeshComponents.dll
     namespaceName: UnityEngine.AI
     className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
+      Hash: eb4a5f28d2cff0ca684cd8aef7bbf1c3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MarketScript
   - hash:
       serializedVersion: 2
       Hash: d86ab1dac539f343232962bff737d824
@@ -542,19 +588,13 @@ ScriptsOnlyBuild:
     className: StaticInspectorWindow
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: 989ec2abc98fc78494917f6917ba9c2d
+      Hash: c05dfcc94c2f2a8bf855a0a56d95ff16
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemScript
@@ -588,6 +628,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 8ec0e792978bd03f071b8a441f3cbb19
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonLoopScript
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -638,10 +684,28 @@ ScriptsOnlyBuild:
     className: ItemSpawner
   - hash:
       serializedVersion: 2
+      Hash: 1ff23f399ff7df8ead47c1d772c220bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonSceneSelect
+  - hash:
+      serializedVersion: 2
+      Hash: 2890c468cf196dca883ea02bde96343e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonLightFade
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.Advertisements.dll
     namespaceName: UnityEngine.Advertisements
     className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: e888ef4305b8fac9cd5510fefa0636bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonFireProjectile
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -698,12 +762,6 @@ ScriptsOnlyBuild:
     className: ProjectPathFinder
   - hash:
       serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -752,7 +810,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 459b50185a167c1d210a783633c72823
+      Hash: 183cae8ceadf8097d1b7d4ae81e87895
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoneyScript
@@ -776,10 +834,16 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: ccfffc8cd5effaafed4d0dced1aaf23e
+      Hash: 1a2e47d961f5b9d628d48c40bd975e69
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ed97efcea24677fbcd02678e6010ac16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonBeamStatic
   - hash:
       serializedVersion: 2
       Hash: 4c19117b72c897cd82801f0f9f36ca9c
@@ -872,7 +936,7 @@ ScriptsOnlyBuild:
     className: BannerPlaceholder
   - hash:
       serializedVersion: 2
-      Hash: ce3ae9a53bff4ba1dbecc3301b0ccbf6
+      Hash: 3223c7b8fcef05af2e8be8e7a86c52a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VisitorScript
@@ -914,6 +978,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: e4a1a2881f247d4d5c2391a545375853
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonSoundSpawn
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -938,7 +1008,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: ddc67b656d3efbeb17a0cc3ff525b160
+      Hash: 948c26b44fbb87542785fed4143dc4f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UpgradeScript
@@ -968,16 +1038,28 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 10c1efae1f52cebf22b5e635ef6947a0
+      Hash: 37d5b26e1028eebde61f6a0f3b807e43
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 42499b36e5db23b809157b5a00b8029d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PolygonLightFlicker
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e84e2691656c76cd0a933b9ce7c70de3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonProjectileScript
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1028,6 +1110,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: be63d1d28ab395d72a015130dbe133cf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VisitorRandomizer
+  - hash:
+      serializedVersion: 2
       Hash: 528e9858840cb8370d93939fff6b42d9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1038,6 +1126,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: SwingArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonButtonScript
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
@@ -1058,10 +1152,22 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParticlesScript
+  - hash:
+      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
+  - hash:
+      serializedVersion: 2
+      Hash: b5aaf686465544e9e949e46e293afee1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PolygonOrbit
   - hash:
       serializedVersion: 2
       Hash: 816c7aed078fb857eb4d3579863f13a4
@@ -1076,16 +1182,28 @@ ScriptsOnlyBuild:
     className: NavmeshBaker
   - hash:
       serializedVersion: 2
-      Hash: 77fa8f4a56b14a5249610bb95634d0a5
+      Hash: 57a1a33a353e19e455c1af513759974e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VisitorSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 79566861074b80c5467fa81dddcf4f5a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonRotation
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 56c90168bc19fe9aee4ba7e6b19350e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PolygonArsenal
+    className: PolygonBeamScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1118,94 +1236,10 @@ ScriptsOnlyBuild:
     className: NavMeshLink
   - hash:
       serializedVersion: 2
-      Hash: 176ea5ff22c81986215d6e7af10b86da
+      Hash: c565eafcaa964e478bba2124679f59de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuildScript
-  - hash:
-      serializedVersion: 2
-      Hash: ed97efcea24677fbcd02678e6010ac16
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonBeamStatic
-  - hash:
-      serializedVersion: 2
-      Hash: 09b31d50a8885ff0947d3bfb1e20c078
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonEffectCycler
-  - hash:
-      serializedVersion: 2
-      Hash: 8ec0e792978bd03f071b8a441f3cbb19
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonLoopScript
-  - hash:
-      serializedVersion: 2
-      Hash: 8e5e00ca42eeebc1eae2f91fabb1ee02
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonButtonScript
-  - hash:
-      serializedVersion: 2
-      Hash: 1ff23f399ff7df8ead47c1d772c220bd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonSceneSelect
-  - hash:
-      serializedVersion: 2
-      Hash: 2890c468cf196dca883ea02bde96343e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonLightFade
-  - hash:
-      serializedVersion: 2
-      Hash: e888ef4305b8fac9cd5510fefa0636bf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonFireProjectile
-  - hash:
-      serializedVersion: 2
-      Hash: e4a1a2881f247d4d5c2391a545375853
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonSoundSpawn
-  - hash:
-      serializedVersion: 2
-      Hash: b5aaf686465544e9e949e46e293afee1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PolygonOrbit
-  - hash:
-      serializedVersion: 2
-      Hash: 79566861074b80c5467fa81dddcf4f5a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonRotation
-  - hash:
-      serializedVersion: 2
-      Hash: 56c90168bc19fe9aee4ba7e6b19350e3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonBeamScript
-  - hash:
-      serializedVersion: 2
-      Hash: 42499b36e5db23b809157b5a00b8029d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PolygonLightFlicker
-  - hash:
-      serializedVersion: 2
-      Hash: e84e2691656c76cd0a933b9ce7c70de3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: PolygonArsenal
-    className: PolygonProjectileScript
-  - hash:
-      serializedVersion: 2
-      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ParticlesScript
   platform: 13
   scenePathNames:
   - Assets/_Scenes/Test.unity

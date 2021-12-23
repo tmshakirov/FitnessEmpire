@@ -9,6 +9,7 @@ public enum TaskType { GOING, WAITING, TRAINING, LEAVING }
 
 public class VisitorScript : SerializedMonoBehaviour
 {
+    public bool vip;
     public bool gotItem;
     public TaskType task;
     public Vector3 target;
@@ -20,6 +21,7 @@ public class VisitorScript : SerializedMonoBehaviour
     private VisitorSpawner spawner;
 
     [SerializeField] private GameObject money;
+    [SerializeField] private Texture2D vipTexture;
 
     [SerializeField] private Dictionary<ToolType, List<GameObject>> tools;
     private List<GameObject> tool;
@@ -27,6 +29,7 @@ public class VisitorScript : SerializedMonoBehaviour
     private Vector3 screenPos;
 
     private Transform player;
+    public TrainerScript trainer;
 
     private void Start()
     {
@@ -92,6 +95,11 @@ public class VisitorScript : SerializedMonoBehaviour
                             case ToolType.TREADMILL:
                                 agent.enabled = false;
                                 transform.position = new Vector3(currentTool.transform.position.x, transform.position.y, currentTool.transform.position.z);
+                                transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y + 90, currentTool.transform.eulerAngles.z);
+                                break;
+                            case ToolType.SQUAT:
+                                agent.enabled = false;
+                                transform.position = new Vector3(currentTool.transform.position.x - 0.5f, transform.position.y, currentTool.transform.position.z);
                                 transform.eulerAngles = new Vector3(currentTool.transform.eulerAngles.x, currentTool.transform.eulerAngles.y + 90, currentTool.transform.eulerAngles.z);
                                 break;
                             default:
@@ -261,6 +269,11 @@ public class VisitorScript : SerializedMonoBehaviour
         if (task == TaskType.WAITING)
         {
             GUI.DrawTexture(new Rect(screenPos.x - 100, Screen.height - screenPos.y - 400, 200, 200), currentTool.texture);
+        }
+        else
+        {
+            if (vip)
+                GUI.DrawTexture(new Rect(screenPos.x - 80, Screen.height - screenPos.y - 350, 160, 160), vipTexture);
         }
     }
 }

@@ -61,8 +61,11 @@ public class StickmanController : Singleton<StickmanController>
 
     public void AddItem (ItemScript _item)
     {
+        ItemScript prevItem = null;
+        if (items.Count > 0)
+            prevItem = items[items.Count - 1];
         items.Add(_item);
-        _item.SetTarget(itemPlace, items.Count);
+        _item.SetTarget(itemPlace, prevItem);
     }
 
     public void RemoveItem (ToolScript _tool, VisitorScript _visitor)

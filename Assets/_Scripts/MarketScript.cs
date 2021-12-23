@@ -9,6 +9,8 @@ public class MarketScript : MonoBehaviour
     private bool isOpen;
     private Transform player;
     private int coachIndex;
+    [SerializeField] private TMP_Text speedPrice, speedDescription;
+    [SerializeField] private GameObject speedBuy;
     [SerializeField] private Transform shopContent;
     [SerializeField] private List<Coach> coaches;
     [SerializeField] private GameObject buyPrefab;
@@ -40,7 +42,7 @@ public class MarketScript : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance (transform.position, player.transform.position) <= 2)
+        if (Vector3.Distance (transform.position, player.transform.position) <= 3)
         {
             if (!isOpen)
             {
@@ -48,12 +50,32 @@ public class MarketScript : MonoBehaviour
                 isOpen = true;
             }
         }
-        if (Vector3.Distance(transform.position, player.transform.position) > 3)
+        if (Vector3.Distance(transform.position, player.transform.position) > 4)
         {
             if (isOpen)
             {
                 UIHandler.Instance.CloseShop();
                 isOpen = false;
+            }
+        }
+    }
+
+    public void BuySpeed()
+    {
+        int price = Mathf.CeilToInt(2000 * (UpgradeHandler.Instance.coachSpeed - 3.4f));
+        float speed = UpgradeHandler.Instance.coachSpeed - 3.5f;
+        if (StickmanController.Instance.EnoughMoney(price))
+        {
+            StickmanController.Instance.AddDollars(-price);
+            UpgradeHandler.Instance.coachSpeed += 0.1f;
+            if (UpgradeHandler.Instance.coachSpeed < 4.5f)
+            {
+                speedPrice.text = "$" + (price + 200);
+                speedDescription.text = string.Format("Current speed : <u>{0:0.0}</u>", UpgradeHandler.Instance.coachSpeed);
+            }
+            else
+            {
+                speedBuy.SetActive(false);
             }
         }
     }

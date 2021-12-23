@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum MoneyType { MONEY, GOLD }
+
 public class MoneyScript : MonoBehaviour
 {
+    [SerializeField] private MoneyType type;
     private bool picked;
     [SerializeField] private float moveSpeed;
     private Transform player;
@@ -31,7 +34,7 @@ public class MoneyScript : MonoBehaviour
             moveSpeed += Time.deltaTime;
             if (Vector3.Distance (transform.position, player.position) <= 0)
             {
-                player.GetComponent<StickmanController>().AddDollars(10);
+                player.GetComponent<StickmanController>().AddDollars((type == MoneyType.GOLD) ? 50 : 10);
                 Destroy(gameObject);
             }
         }

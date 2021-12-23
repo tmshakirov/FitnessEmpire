@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIHandler : Singleton<UIHandler>
 {
@@ -10,6 +11,7 @@ public class UIHandler : Singleton<UIHandler>
     public TMP_Text label;
     [SerializeField] private List<string> buildingTexts;
     [SerializeField] private CanvasGroup shopCanvas;
+    [SerializeField] private ScrollRect shopScroll;
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class UIHandler : Singleton<UIHandler>
     {
         shopCanvas.gameObject.SetActive(true);
         shopCanvas.transform.DOScale(1, 0.25f);
+        shopScroll.verticalNormalizedPosition = 1;
     }
 
     public void CloseShop()

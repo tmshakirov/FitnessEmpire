@@ -26,6 +26,8 @@ public class TrainerScript : MonoBehaviour
         itemTimer = 60;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        moveSpeed = UpgradeHandler.Instance.coachSpeed;
+        agent.speed = moveSpeed;
         InvokeRepeating("FindVisitors", 0.1f, 0.1f);
     }
 
@@ -86,12 +88,59 @@ public class TrainerScript : MonoBehaviour
                 }
                 else
                 {
-                    Destroy(item.gameObject);
-                    visitor = null;
-                    spawner = null;
-                    task = TrainerType.WAITING;
+                    FindVisitors(item);
                 }
                 break;
+        }
+    }
+
+    private void FindVisitors (ItemScript _item)
+    {
+        visitor = null;
+        var visitors = FindObjectsOfType<VisitorScript>().ToList();
+        if (visitors.Count > 0)
+        {
+            foreach (var v in visitors)
+            {
+                if (v.task == TaskType.WAITING && v.currentTool != null && v.currentTool.type == _item.type && v.trainer == null)
+                {
+                    if (visitor == null ||
+                        Vector3.Distance(transform.position, visitor.transform.position) > Vector3.Distance(transform.position, v.transform.position))
+                        visitor = v;
+                }
+            }
+            if (visitor != null)
+            {
+                visitor.trainer = this;
+                var t = visitor.currentTool;
+                var items = FindObjectsOfType<ItemSpawner>();
+                spawner = items.First(x => x.ItemType() == t.type);
+                if (spawner != null)
+                {
+                    target = new Vector3(spawner.transform.position.x, transform.position.y, spawner.transform.position.z);
+                    agent.SetDestination(target);
+                    task = TrainerType.GOING;
+                }
+                else
+                {
+                    task = TrainerType.WAITING;
+                    agent.SetDestination(transform.position);
+                }
+            }
+            else
+            {
+                Destroy(_item.gameObject);
+                visitor = null;
+                spawner = null;
+                task = TrainerType.WAITING;
+            }
+        }
+        else
+        {
+            Destroy(_item.gameObject);
+            visitor = null;
+            spawner = null;
+            task = TrainerType.WAITING;
         }
     }
 
@@ -102,7 +151,7 @@ public class TrainerScript : MonoBehaviour
             var visitors = FindObjectsOfType<VisitorScript>().ToList();
             foreach (var v in visitors)
             {
-                if (v.task == TaskType.WAITING && v.currentTool != null)
+                if (v.task == TaskType.WAITING && v.currentTool != null && v.trainer == null)
                 {
                     if (visitor == null ||
                         Vector3.Distance(transform.position, visitor.transform.position) > Vector3.Distance(transform.position, v.transform.position))
@@ -111,6 +160,7 @@ public class TrainerScript : MonoBehaviour
             }
             if (visitor != null)
             {
+                visitor.trainer = this;
                 var t = visitor.currentTool;
                 var items = FindObjectsOfType<ItemSpawner>();
                 spawner = items.First(x => x.ItemType() == t.type);
@@ -156,7 +206,7 @@ public class TrainerScript : MonoBehaviour
     {
         var _item = spawner.SpawnItem();
         item = _item;
-        _item.SetTarget(itemPlace, 0);
+        _item.SetTarget(itemPlace, null);
     }
 
     private void GiveItem()

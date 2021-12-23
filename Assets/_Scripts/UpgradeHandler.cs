@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UpgradeHandler : Singleton<UpgradeHandler>
 {
+    public float coachSpeed = 3.5f;
     [SerializeField] private List<UpgradeScript> nextRooms;
     [SerializeField] private List<Upgrade> upgrades;
 
