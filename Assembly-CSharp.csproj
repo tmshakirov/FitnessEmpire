@@ -61,6 +61,7 @@
     <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonEffectCycler.cs" />
     <Compile Include="Assets/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Base/Joystick.cs" />
+    <Compile Include="Assets/_Scripts/MarketScript.cs" />
     <Compile Include="Assets/_Scripts/ToolScript.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets/_Scripts/StickmanController.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" />
     <Compile Include="Assets/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" />
+    <Compile Include="Assets/_Scripts/VisitorRandomizer.cs" />
     <Compile Include="Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
     <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonButtonScript.cs" />
     <Compile Include="Assets/_Scripts/ParticlesScript.cs" />
@@ -105,8 +107,7 @@
     <Compile Include="Assets/Polygon Arsenal/Demo/Scripts/PolygonBeamScript.cs" />
     <Compile Include="Assets/_Scripts/CameraController.cs" />
     <Compile Include="Assets/_Scripts/BuildScript.cs" />
-    <Compile Include="Assets/_Scripts/VisitorRandomizer.cs" />
-    <Compile Include="Assets/_Scripts/MarketScript.cs" />
+    <Compile Include="Assets/_Scripts/StockScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

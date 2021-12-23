@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using System;
+using UnityEngine.UI;
 
 public class StickmanController : Singleton<StickmanController>
 {
@@ -12,6 +12,8 @@ public class StickmanController : Singleton<StickmanController>
     private Rigidbody RB;
     [SerializeField] private List<ItemScript> items;
     [SerializeField] private Transform itemPlace;
+    [SerializeField] private GameObject money, gold;
+    [SerializeField] private RectTransform moneyRect, canvasRect;
     [SerializeField] private Joystick joystick;
     [SerializeField] private float stickmanSpeed;
 
@@ -113,9 +115,46 @@ public class StickmanController : Singleton<StickmanController>
 
     public void AddDollars (int _amount)
     {
-        dollars += _amount;
-        if (dollars < 0)
-            dollars = 0;
+        if (_amount > 0)
+        {
+            bool gold = _amount >= 50;
+            if (gold)
+                StartCoroutine(AddingMoney(_amount / 50, gold));
+            else
+                StartCoroutine(AddingMoney(_amount, gold));
+        }
+        else
+        {
+            dollars += _amount;
+            if (dollars < 0)
+                dollars = 0;
+        }
         UIHandler.Instance.SetCount(dollars);
+    }
+
+    private IEnumerator AddingMoney (int _amount, bool _gold)
+    {
+        if (_amount > 0)
+        {
+            var m = Instantiate(_gold ? gold : money, canvasRect.transform);
+            m.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+            m.GetComponent<Image>().DOFade(0.5f, 0.3f);
+            m.transform.DOMoveY(m.transform.position.y + 100, 0.3f).OnComplete(() =>
+            {
+                m.GetComponent<Image>().DOFade(0.1f, 0.4f);
+                m.transform.DOScale(0.1f, 0.4f);
+                m.transform.DOMove(moneyRect.transform.position, 0.4f).OnComplete(() =>
+                {
+                    Destroy(m.gameObject);
+                });
+            });
+            yield return new WaitForSeconds(0.05f);
+            if (_gold)
+                dollars += 50;
+            else
+                dollars += 10;
+            UIHandler.Instance.SetCount(dollars);
+            StartCoroutine(AddingMoney(_amount-1, _gold));
+        }
     }
 }

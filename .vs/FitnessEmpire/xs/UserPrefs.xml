@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{25253211-B39E-F1A6-37DC-97E7A0959AE9}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/VisitorSpawner.cs">
     <Files>
-      <File FileName="Assets/_Scripts/StickmanController.cs" Line="68" Column="44" />
+      <File FileName="Assets/_Scripts/StockScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/StickmanController.cs" />
       <File FileName="Assets/_Scripts/UpgradeHandler.cs" />
       <File FileName="Assets/_Scripts/UpgradeScript.cs" />
       <File FileName="Assets/_Scripts/TrainerScript.cs" />
       <File FileName="Assets/_Scripts/ToolScript.cs" />
-      <File FileName="Assets/_Scripts/ItemSpawner.cs" Line="44" Column="46" />
+      <File FileName="Assets/_Scripts/ItemSpawner.cs" />
       <File FileName="Assets/_Scripts/VisitorScript.cs" />
       <File FileName="Assets/_Scripts/CameraController.cs" />
       <File FileName="Assets/_Scripts/ToolsHandler.cs" />
@@ -25,8 +26,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FitnessEmpire" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="_Scripts" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="_Scripts" expanded="True">
+                <Node name="StockScript.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -35,7 +38,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a0dfb529-e05b-4f71-a596-b282dca1854f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6f23141e-b576-4c76-9b18-4dd156ff9138" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
