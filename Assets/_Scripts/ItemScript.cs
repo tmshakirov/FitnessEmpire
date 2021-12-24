@@ -46,7 +46,7 @@ public class ItemScript : SerializedMonoBehaviour
         if (_prevItem != null)
         {
             if (offsets.TryGetValue(_prevItem.type, out offset))
-                destPos = new Vector3(offPos.x, _prevItem.transform.localPosition.y + offset, offPos.y);
+                destPos = new Vector3(offPos.x, _prevItem.destPos.y + offset, offPos.y);
         }
         else
         {

@@ -5,12 +5,14 @@ using Sirenix.OdinInspector;
 using DG.Tweening;
 using UnityEngine.AI;
 
+public enum Gender { MALE, FEMALE }
 public enum TaskType { GOING, WAITING, TRAINING, LEAVING }
 
 public class VisitorScript : SerializedMonoBehaviour
 {
     public bool vip;
     public bool gotItem;
+    public Gender gender;
     public TaskType task;
     public Vector3 target;
     private Animator anim;
@@ -73,7 +75,7 @@ public class VisitorScript : SerializedMonoBehaviour
             case TaskType.GOING:
                 if (currentTool != null)
                 {
-                    anim.Play("Walk");
+                    anim.Play(gender == Gender.FEMALE ? "FemaleWalk" : "Walk");
                     //transform.LookAt(target);
                     //transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
                     //if (Vector3.Distance(transform.position, target) <= currentTool.waitingDistance)
@@ -112,7 +114,7 @@ public class VisitorScript : SerializedMonoBehaviour
                 }
                 else
                 {
-                    anim.Play("Idle");
+                    anim.Play(gender == Gender.FEMALE ? "FemaleIdle" : "Idle");
                     toolFindingTimer -= Time.deltaTime * 60;
                     if (toolFindingTimer <= 0)
                     {
@@ -136,7 +138,7 @@ public class VisitorScript : SerializedMonoBehaviour
                 TrainingAnimation();
                 break;
             case TaskType.LEAVING:
-                anim.Play("Walk");
+                anim.Play(gender == Gender.FEMALE ? "FemaleWalk" : "Walk");
                 //transform.LookAt(target);
                 //transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
                 //if (Vector3.Distance(transform.position, target) <= 0)
@@ -233,7 +235,7 @@ public class VisitorScript : SerializedMonoBehaviour
                 anim.Play("CyclingIdle");
                 break;
             default:
-                anim.Play("Idle");
+                anim.Play(gender == Gender.FEMALE ? "FemaleIdle" : "Idle");
                 break;
         }
     }
@@ -249,7 +251,7 @@ public class VisitorScript : SerializedMonoBehaviour
                 anim.Play("Punch");
                 break;
             case ToolType.TREADMILL:
-                anim.Play("Run");
+                anim.Play(gender == Gender.FEMALE ? "FemaleRunning" : "Run");
                 break;
             case ToolType.BIKE:
                 anim.Play("Cycling");

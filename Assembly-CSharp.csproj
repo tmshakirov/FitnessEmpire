@@ -108,6 +108,7 @@
     <Compile Include="Assets/_Scripts/CameraController.cs" />
     <Compile Include="Assets/_Scripts/BuildScript.cs" />
     <Compile Include="Assets/_Scripts/StockScript.cs" />
+    <Compile Include="Assets/_Scripts/AerobicsCoachScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

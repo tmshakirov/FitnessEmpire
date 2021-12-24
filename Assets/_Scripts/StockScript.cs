@@ -30,9 +30,9 @@ public class StockScript : MonoBehaviour
         Vector2 canvasPos;
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(offsetPos);
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, null, out canvasPos);
-        stockUI.transform.localPosition = new Vector2(canvasPos.x, canvasPos.y + 200);
+        stockUI.transform.localPosition = new Vector2(canvasPos.x, canvasPos.y + 375);
         
-        if (Vector3.Distance (transform.position, player.transform.position) <= 2.25f)
+        if (Vector3.Distance (transform.position, player.transform.position) <= 2.5f)
         {
             if (stockCurrent > 0)
             {
