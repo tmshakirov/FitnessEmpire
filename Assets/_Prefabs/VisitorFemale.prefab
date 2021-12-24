@@ -971,17 +971,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visitor: {fileID: 2133626690188201429}
   shirtMaterials:
-  - {fileID: 2100000, guid: d39c5da3a6ee0784db7b6d32483b5a6c, type: 2}
-  - {fileID: 2100000, guid: c1cbed23a7661fb4e9af158636263e80, type: 2}
+  - {fileID: 2100000, guid: 2c4539c16dcb86946b9cf297d9328c87, type: 2}
+  - {fileID: 2100000, guid: ecf103952de58e243bc603143ca1c4df, type: 2}
   - {fileID: 2100000, guid: b955a159d4b07284f8823aaa79d1c8c0, type: 2}
   - {fileID: 2100000, guid: 3edaa85a10b7f3843a39b75915b9b628, type: 2}
-  - {fileID: 2100000, guid: 53a03a1bd2d84d44dbfb0dab1200b8fe, type: 2}
+  - {fileID: 2100000, guid: 939d3868514e2d548a0c37cd8bf735ca, type: 2}
   pantsMaterials:
-  - {fileID: 2100000, guid: d39c5da3a6ee0784db7b6d32483b5a6c, type: 2}
-  - {fileID: 2100000, guid: c1cbed23a7661fb4e9af158636263e80, type: 2}
-  - {fileID: 2100000, guid: b955a159d4b07284f8823aaa79d1c8c0, type: 2}
-  - {fileID: 2100000, guid: 3edaa85a10b7f3843a39b75915b9b628, type: 2}
-  - {fileID: 2100000, guid: 53a03a1bd2d84d44dbfb0dab1200b8fe, type: 2}
+  - {fileID: 2100000, guid: 7aadf103df0bf7b46b7b8f32e4af0fcb, type: 2}
+  - {fileID: 2100000, guid: 523c06e784e1cae4eb481541baae9487, type: 2}
+  - {fileID: 2100000, guid: 932a951924e27564b8ed3df6a59f3376, type: 2}
+  - {fileID: 2100000, guid: 5a58f4bbd9b85487ea320c780f8949ab, type: 2}
+  - {fileID: 2100000, guid: 7aadf103df0bf7b46b7b8f32e4af0fcb, type: 2}
 --- !u!195 &4631286093161760314
 NavMeshAgent:
   m_ObjectHideFlags: 0
